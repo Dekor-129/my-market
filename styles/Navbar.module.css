@@ -1,0 +1,23 @@
+.navbar {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+}
+
+.block {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.block:hover {
+  background-color: orange;
+}
+

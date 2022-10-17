@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "edinorog",
+    "src": "/candles/edinorog.jpg",
+    "text": "Едирожка"
+  },
+  {
+    "id": 2,
+    "name": "elka1",
+    "src": "/candles/elka1.jpg",
+    "text": "Елка"
+  },
+  {
+    "id": 3,
+    "name": "elka2",
+    "src": "/candles/elka2.jpg",
+    "text": "Елка"
+  },
+  {
+    "id": 4,
+    "name": "medved",
+    "src": "/candles/medved.jpg",
+    "text": "Медвежонок"
+  },
+  {
+    "id": 5,
+    "name": "mouse",
+    "src": "/candles/mouse.jpg",
+    "text": "Мышонок"
+  },
+  {
+    "id": 6,
+    "name": "olenenok",
+    "src": "/candles/olenenok.jpg",
+    "text": "Олененок"
+  },
+  {
+    "id": 7,
+    "name": "romanticpara",
+    "src": "/candles/romanticpara.jpg",
+    "text": "Нежность"
+  },
+  {
+    "id": 8,
+    "name": "serdcecolonna",
+    "src": "/candles/serdcecolonna.jpg",
+    "text": "Сердце"
+  },
+  {
+    "id": 9,
+    "name": "serdcegeometria",
+    "src": "/candles/serdcegeometria.jpg",
+    "text": "Сердце"
+  }
+]

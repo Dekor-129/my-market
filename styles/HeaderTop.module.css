@@ -1,0 +1,31 @@
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 10px 50px;
+}
+
+.logoBlock {
+  display: flex;
+  margin-left: 150px;
+  cursor: pointer;
+}
+
+.contactButton {
+  height: 50px;
+  width: 150px;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 0;
+}
+.contactButton:hover {
+  color: #fff;
+  background-color: black;
+}
+
+.textLogoBlock {
+  display: flex;
+  align-items:flex-end;
+  font-size: larger;
+  padding-bottom: 5px;
+}
