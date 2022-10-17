@@ -1,7 +1,8 @@
+import Image from "next/image"
 
 
 export default function ProductImg(props) {
   return (
-    <img  src={props.src} />
+    <Image  src={props.src} />
   )
 }
