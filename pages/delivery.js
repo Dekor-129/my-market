@@ -1,10 +1,12 @@
 import Header from '../components/Header'
+import MainContainer from '../Layouts/MainContainer'
 
 export default function Delivery() {
   return (
   <>
-    <Header />
-    <div>Delivery</div>
+    <MainContainer title = 'Доставка'>
+      <div>Delivery</div>
+    </MainContainer>
   </>
   )
 }

@@ -1,10 +1,11 @@
-import Header from '../components/Header'
+import MainContainer from '../Layouts/MainContainer'
 
 export default function Contacts() {
   return (
     <>
-    <Header />
-    <div>Contacts</div>
+    <MainContainer title = 'Контакты'>
+      <div>Contacts</div>
+    </MainContainer>
     </>
   )
 }

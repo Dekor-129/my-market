@@ -1,7 +1,7 @@
 
 
-export default function ProductDescription() {
+export default function ProductDescription(props) {
   return (
-    <div>ProductDescription</div>
+    <div><strong>{ props.elem.text}</strong></div>
   )
 }

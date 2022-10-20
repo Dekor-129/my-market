@@ -1,7 +1,12 @@
 import classes from '../../styles/ProductCard.module.css'
+import Link from 'next/link'
 
-export default function ProductImg(props) {
+export default function ProductImg({ name, src }) {
   return (
-    <img className={ classes.img } src={props.src} />
+    <Link href={`/${name}`}>
+      <a>
+        <img className={ classes.img } src={ src } />
+      </a>
+    </Link>
   )
 }

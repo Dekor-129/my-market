@@ -18,6 +18,7 @@
 }
 
 .block:hover {
-  background-color: orange;
+  color: #fff;
+  background-color: black;
 }
 

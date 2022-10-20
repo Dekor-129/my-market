@@ -1,10 +1,11 @@
-import Header from '../components/Header'
+import MainContainer from '../Layouts/MainContainer'
 
 export default function About() {
   return (
   <>
-    <Header />
-    <div>About</div>
+    <MainContainer title = 'О нас'>
+      <div>About</div>
+    </MainContainer>
     </>
   )
 }

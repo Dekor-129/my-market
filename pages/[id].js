@@ -1,6 +1,7 @@
 import {useRouter} from 'next/router'
 import ProductPage from '../components/ProductPage';
 import db from '../dataBase/db.json'
+import MainContainer from '../Layouts/MainContainer'
 
 export default function Posts({data}) {
   const router = useRouter()
@@ -9,7 +10,9 @@ export default function Posts({data}) {
 
   return (
     <>
-      <ProductPage src={product.src}/>
+      <MainContainer title = {product.text}>
+        <ProductPage src={product.src}/>
+      </MainContainer>
     </>
   )
 }

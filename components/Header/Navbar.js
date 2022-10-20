@@ -15,10 +15,10 @@ export default function Navbar() {
           <Link href={'/delivery'}>
             <a className= {classes.block}>Доставка</a>
           </Link>
-          <Link href={'/contacts'}>
+          <Link href={'/about'}>
             <a className= {classes.block}>О нас</a>
           </Link>
-          <Link href={'/about'}>
+          <Link href={'/contacts'}>
             <a className= {classes.block}>Контакты</a>
           </Link>
       </div>
