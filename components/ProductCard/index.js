@@ -1,9 +1,9 @@
 import ProductDescription from "./ProductDescription";
 import ProductImg from "./ProductImg";
 import classes from '../../styles/ProductCard.module.css'
-import MyButton from "../UI/MyButton";
+import CardButton from "./CardButton";
 
-export default function ProductCard({ elem }) {
+export default function ProductCard({ elem, setButton }) {
   return (
     <div className={ classes.card }>
       <ProductImg 
@@ -11,14 +11,13 @@ export default function ProductCard({ elem }) {
         src = { elem.src }  
       />
       <ProductDescription elem = {elem} />
-      <MyButton
-        className = {classes.buttonMore} 
-        text = 'Подробнее...'
-      />
-      <MyButton 
-        className = {classes.buttonSendToCart} 
-        text = 'В корзину'
-      />
+      {
+        setButton 
+        ? <div className={classes.buttonBlock}>
+            <CardButton />
+          </div>
+        : <></>
+      }
     </div>
   )
 }

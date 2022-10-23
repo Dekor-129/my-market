@@ -1,10 +1,15 @@
 import ProductPageImg from './ProductPageImg'
+import classes from '../../styles/ProductPage.module.css'
 
 export default function ProductPage(props) {
-  console.log(props.src);
   return (
-    <div>
-      <ProductPageImg src ={props.src} />
+    <>
+    <div className={classes.container}>
+      <ProductPageImg 
+        src ={props.src} 
+        className={classes.img}
+      />
     </div>
+    </>
   )
 }

@@ -1,7 +1,9 @@
-
+import classes from '../../styles/ProductCard.module.css'
 
 export default function ProductDescription(props) {
   return (
-    <div><strong>{ props.elem.text}</strong></div>
+    <div className={classes.textDesc}>
+      <strong>{ props.elem.text}</strong>
+    </div>
   )
 }

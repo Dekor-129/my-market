@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "shaped-candles",
+    "src": "/catalogImg/form-candle.jpg",
+    "text": "Формовые свечи"
+  },
+  {
+    "id": 2,
+    "name": "container-candles",
+    "src": "/catalogImg/container-candle.jpg",
+    "text": "Контейнерные свечи"
+  },
+  {
+    "id": 3,
+    "name": "scented-candles",
+    "src": "/catalogImg/aroma-candle.jpg",
+    "text": "Ароматические свечи"
+  }
+]

@@ -4,7 +4,7 @@ export default function About() {
   return (
   <>
     <MainContainer title = 'О нас'>
-      <div>About</div>
+
     </MainContainer>
     </>
   )

@@ -5,7 +5,7 @@ export default function Delivery() {
   return (
   <>
     <MainContainer title = 'Доставка'>
-      <div>Delivery</div>
+      
     </MainContainer>
   </>
   )

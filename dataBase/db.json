@@ -3,54 +3,63 @@
     "id": 1,
     "name": "edinorog",
     "src": "/candles/edinorog.jpg",
-    "text": "Едирожка"
+    "text": "Едирожка",
+    "type": "shaped-candles"
   },
   {
     "id": 2,
     "name": "elka1",
     "src": "/candles/elka1.jpg",
-    "text": "Елка"
+    "text": "Елка",
+    "type": "shaped-candles"
   },
   {
     "id": 3,
     "name": "elka2",
     "src": "/candles/elka2.jpg",
-    "text": "Елка"
+    "text": "Елка",
+    "type": "shaped-candles"
   },
   {
     "id": 4,
     "name": "medved",
     "src": "/candles/medved.jpg",
-    "text": "Медвежонок"
+    "text": "Медвежонок",
+    "type": "shaped-candles"
   },
   {
     "id": 5,
     "name": "rabbit",
     "src": "/candles/mouse.jpg",
-    "text": "Кролик"
+    "text": "Кролик",
+    "type": "shaped-candles"
   },
   {
     "id": 6,
     "name": "olenenok",
     "src": "/candles/olenenok.jpg",
-    "text": "Олененок"
+    "text": "Олененок",
+    "type": "shaped-candles"
   },
   {
     "id": 7,
     "name": "romanticpara",
     "src": "/candles/romanticpara.jpg",
-    "text": "Нежность"
+    "text": "Нежность",
+    "type": "shaped-candles"
   },
   {
     "id": 8,
     "name": "serdcecolonna",
     "src": "/candles/serdcecolonna.jpg",
-    "text": "Сердце"
+    "text": "Сердце",
+    "type": "shaped-candles"
   },
   {
     "id": 9,
     "name": "serdcegeometria",
     "src": "/candles/serdcegeometria.jpg",
-    "text": "Сердце"
+    "text": "Сердце",
+    "type": "shaped-candles"
   }
 ]

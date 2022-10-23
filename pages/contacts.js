@@ -4,7 +4,7 @@ export default function Contacts() {
   return (
     <>
     <MainContainer title = 'Контакты'>
-      <div>Contacts</div>
+      
     </MainContainer>
     </>
   )

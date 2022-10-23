@@ -1,24 +1,47 @@
+/*Контейнер*/
+
 .navbar {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  background-color:#4D689C;
+  color: #fff;
 }
 
 .container {
   display: flex;
-  justify-content: space-around;
-  width: 800px;
+  flex-wrap: wrap;
+  margin-left: 200px;
+  /*width: 800px;*/
+  background-color: 0ff069;
 }
 
+/*Контейнер*/
+
+/*Блок*/
+
 .block {
-  padding: 1rem;
+  display: block;
+  color: #fff;
+  width: 150px;
   cursor: pointer;
+  text-align: center;
+  padding: 14px;
 }
 
 .block:hover {
   color: #fff;
-  background-color: black;
+  background-color: #7F9ACE;
+}
+
+/*Блок*/
+
+@media (max-width: 1200px) {
+  .container {
+    margin-left: 75px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    margin-left: 55px;
+  }
 }
 

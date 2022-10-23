@@ -1,8 +1,12 @@
 .footer {
-  background-color: #000;
+  background-color: #4D689C;
   color: #fff;
   display: flex;
   justify-content: center;
+}
+
+.footer a {
+  color: #fff;
 }
 
 .block {

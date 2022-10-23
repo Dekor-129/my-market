@@ -2,26 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 10px 50px;
+  margin: 0 130px 20px 245px;
 }
 
 .logoBlock {
   display: flex;
-  margin-left: 150px;
   cursor: pointer;
-}
-
-.contactButton {
-  height: 50px;
-  width: 150px;
-  background-color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 0;
-}
-.contactButton:hover {
-  color: #fff;
-  background-color: black;
 }
 
 .textLogoBlock {
@@ -29,4 +15,36 @@
   align-items:flex-end;
   font-size: larger;
   padding-bottom: 5px;
+}
+
+.buttonCart {
+  cursor: pointer;
+}
+
+.buttonCart a {
+  color: #4D689C
+}
+
+.buttonCart a:hover {
+  color: #e75413
+}
+
+@media (max-width: 1200px) {
+  .headerTop {
+    margin-left: 120px;
+  }
+}
+
+@media (max-width: 800px) {
+  .headerTop {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  
+  .headerTop {
+    justify-content: center;
+    margin: 10px 0 50px;
+  }
 }

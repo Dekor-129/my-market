@@ -1,3 +1,5 @@
+/*Общее*/
+
 html,
 body {
   padding: 0;
@@ -6,21 +8,38 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+header {
+  background-color: #fff;
 }
+
+body {
+  background: #edeef0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/*Общее*/
+
+/*Блок пути*/
+
+.blockPath {
+  margin: 20px 0 0 245px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.blockPath a{
+  color: #7F9ACE;
+}
+
+.blockPath span{
+  color: #4D689C;
+}
+
+/*Блок пути*/
