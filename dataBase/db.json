@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "edinorog",
-    "src": "/candles/edinorog.jpg",
-    "text": "Едирожка",
+    "name": "pony",
+    "src": "/candles/pony.jpg",
+    "text": "Пони",
     "type": "shaped-candles"
   },
   {
@@ -35,13 +35,6 @@
     "type": "shaped-candles"
   },
   {
-    "id": 6,
-    "name": "olenenok",
-    "src": "/candles/olenenok.jpg",
-    "text": "Олененок",
-    "type": "shaped-candles"
-  },
-  {
     "id": 7,
     "name": "romanticpara",
     "src": "/candles/romanticpara.jpg",
@@ -57,9 +50,44 @@
   },
   {
     "id": 9,
-    "name": "serdcegeometria",
+    "name": "serdce-geometry",
     "src": "/candles/serdcegeometria.jpg",
     "text": "Сердце",
+    "type": "shaped-candles"
+  },
+  {
+    "id": 10,
+    "name": "geometry",
+    "src": "/candles/geometry.jpg",
+    "text": "Геометрия",
+    "type": "shaped-candles"
+  },
+  {
+    "id": 11,
+    "name": "sova",
+    "src": "/candles/sova.jpg",
+    "text": "Сова",
+    "type": "shaped-candles"
+  },
+  {
+    "id": 12,
+    "name": "rose",
+    "src": "/candles/rose.jpg",
+    "text": "Роза",
+    "type": "shaped-candles"
+  },
+  {
+    "id": 13,
+    "name": "rose-colonna",
+    "src": "/candles/rose-colonna.jpg",
+    "text": "Колонна роз",
+    "type": "shaped-candles"
+  },
+  {
+    "id": 14,
+    "name": "boginya-bast",
+    "src": "/candles/boginya-bast.jpg",
+    "text": "Богиня Баст",
     "type": "shaped-candles"
   }
 ]

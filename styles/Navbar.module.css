@@ -39,9 +39,20 @@
   }
 }
 
+@media (max-width: 825px) {
+  .block {
+    width: 100px;
+  }
+}
+
 @media (max-width: 800px) {
   .container {
     margin-left: 55px;
   }
 }
 
+@media (max-width: 700px) {
+  .container {
+    margin: 0 20px;
+  }
+}

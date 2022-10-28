@@ -16,5 +16,11 @@
     "name": "scented-candles",
     "src": "/catalogImg/aroma-candle.jpg",
     "text": "Ароматические свечи"
+  },
+  {
+    "id": 4,
+    "name": "voshina",
+    "src": "/catalogImg/voshina.jpg",
+    "text": "Свечи из вощины"
   }
 ]

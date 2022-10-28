@@ -9,7 +9,9 @@ export default function MainContainer(props) {
         <title>{props.title}</title>
       </Head>
       <Header />
-      {props.children}
+      <main>
+        {props.children}
+      </main>
       <Footer />
     </>
   )
