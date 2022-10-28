@@ -2,29 +2,32 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import classes from '../../styles/Navbar.module.css'
+import Link from 'next/link'
 
 export default function HeaderReact() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+    <Navbar className= {classes.navbar} expand="lg">
+      <Container >
+        <Navbar.Brand>
+        <Link href={'/'}>
+              <a className = {classes.block}>Главная</a>
+            </Link>
+          </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
+        <Navbar.Collapse id="basic-navbar-nav">     
+            <Link href={'/catalog'}>
+              <a className= {classes.block}>Каталог</a>
+            </Link>
+            <Link href={'/delivery'}>
+              <a className= {classes.block}>Доставка</a>
+            </Link>
+            <Link href={'/about'}>
+              <a className= {classes.block}>О нас</a>
+            </Link>
+            <Link href={'/contacts'}>
+              <a className= {classes.block}>Контакты</a>
+            </Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

@@ -6,17 +6,9 @@ import { useSelector } from 'react-redux'
 export default function Cart() {
   const rotate = useSelector((state)=> state.animate.rotate)
   const num = useSelector((state)=> state.items.num)
-  
-  const cartRotate = ()=> {
-    setRotate(10)
-    setTimeout(()=>setRotate(-10), 250)
-    setTimeout(()=>setRotate(0), 500)
-  }
 
   return (
-    <div className={classes.buttonCart} onClick={()=>{
-      cartRotate()
-    }}>
+    <div className={classes.buttonCart}>
       <motion.div
           className="box"
           animate={{ rotate }}

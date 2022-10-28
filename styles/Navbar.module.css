@@ -2,7 +2,6 @@
 
 .navbar {
   background-color:#4D689C;
-  color: #fff;
 }
 
 .container {
@@ -23,12 +22,10 @@
   width: 150px;
   cursor: pointer;
   text-align: center;
-  padding: 14px;
 }
 
 .block:hover {
   color: #fff;
-  background-color: #7F9ACE;
 }
 
 /*Блок*/

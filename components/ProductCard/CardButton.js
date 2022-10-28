@@ -1,13 +1,15 @@
 import classes from '../../styles/ProductCard.module.css'
 import { useDispatch } from 'react-redux'
 import { addNumAction } from '../../store/itemsReducer'
-import { rotatePlus, rotateMinus } from '../../store/animateReduser'
+import { rotatePlus, rotateMinus, showAlert } from '../../store/animateReduser'
 
 export default function CardButton() {
   const dispatch = useDispatch()
 
   const addNum = () =>{
-    dispatch(addNumAction(1))
+    dispatch(addNumAction(1));
+    dispatch(showAlert(true));
+    setTimeout(()=>dispatch(showAlert(false)), 2500)
   }
 
   const rotateCartPlus = (num = 0) =>{
