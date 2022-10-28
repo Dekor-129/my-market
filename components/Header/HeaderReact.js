@@ -7,8 +7,8 @@ import Link from 'next/link'
 
 export default function HeaderReact() {
   return (
-    <Navbar className= {classes.navbar} expand="lg">
-      <Container >
+    <Navbar className= {classes.navbar } expand="lg">
+      <Container>
         <Navbar.Brand>
         <Link href={'/'}>
               <a className = {classes.block}>Главная</a>

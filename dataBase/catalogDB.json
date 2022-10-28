@@ -7,19 +7,13 @@
   },
   {
     "id": 2,
-    "name": "container-candles",
-    "src": "/catalogImg/container-candle.jpg",
-    "text": "Контейнерные свечи"
-  },
-  {
-    "id": 3,
     "name": "scented-candles",
     "src": "/catalogImg/aroma-candle.jpg",
     "text": "Ароматические свечи"
   },
   {
-    "id": 4,
-    "name": "voshina",
+    "id": 3,
+    "name": "voshina-candles",
     "src": "/catalogImg/voshina.jpg",
     "text": "Свечи из вощины"
   }

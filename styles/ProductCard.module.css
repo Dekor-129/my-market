@@ -3,8 +3,8 @@
 .container {
   display: flex;
   flex-wrap:wrap;
-  justify-content: space-around;
-  margin: 0 150px;
+  justify-content: space-between;
+  margin: 20px 150px;
 }
 
 /*Контейнеры*/
@@ -13,14 +13,14 @@
 
 .img {
   width: auto;
-  height: 350px;
+  height: 300px;
   border-radius: 10px;
   cursor: pointer;
   border: 1px solid #edeef0;
 }
 
 .card {
-  margin: 50px 40px;
+  margin: 30px 15px;
   background-color: #fff;
   padding: 10px 10px;
   border-radius: 10px;
@@ -61,18 +61,45 @@
 
 /*Адаптив*/
 
+@media (max-width: 1350px) {
+  .img {
+    height: 230px;
+  }
+}
+
 @media (max-width: 1200px) {
+  .img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 1050px) {
   .img {
     height: 250px;
   }
 }
 
-@media (max-width: 800px) {
-  
+
+@media (max-width: 900px) {
+  .img {
+    height: 200px;
+  }
 }
 
-@media (max-width: 700px) {
-  
+@media (max-width: 900px) {
+  .img {
+    height: 350px;
+  }
+  .container{
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .img {
+    height: 250px;
+  }
 }
 
 /*Адаптив*/

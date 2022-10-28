@@ -13,9 +13,9 @@ export default function MyAlert() {
         initial={alertVariants.hidden}
         animate={alertVariants.visible}
         variants={alertVariants}
-        className={classes.alert}
+        className={classes.alertDiv}
       >
-        <Alert >
+        <Alert className={classes.alert}>
           Ваш заказ {'success'} Добавлен в корзину!
         </Alert>
       </motion.div>}

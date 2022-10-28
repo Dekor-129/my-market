@@ -53,3 +53,21 @@ img {
 }
 
 /*Блок пути*/
+
+@media (max-width: 1200px) {
+  .blockPath {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .blockPath {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  .blockPath {
+    margin-left: 50px;
+  }
+}

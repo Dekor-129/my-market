@@ -5,7 +5,7 @@ const defaultStore = {
     alertVariants: {
         visible: { 
             opacity: 1,
-            y: '-100px',
+            y: '-150px',
             },
         hidden: { 
             opacity: 0,

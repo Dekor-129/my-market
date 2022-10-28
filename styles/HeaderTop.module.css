@@ -29,20 +29,41 @@
   color: #e75413
 }
 
+/*Адаптив*/
+
+@media (max-width: 2500px) {
+  .headerTop {
+    margin-left: 100px;
+  }
+}
+
 @media (max-width: 1200px) {
   .headerTop {
-    margin-left: 120px;
+    margin-left: 150px;
+  }
+}
+@media (max-width: 1160px) {
+  .headerTop {
+    margin: 0 50px 10px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .headerTop {
+    margin: 0 50px 10px;
   }
 }
 
 @media (max-width: 800px) {
   .headerTop {
-    margin: 0 100px 10px;
+    margin: 0 50px 10px;
   }
 }
 
 @media (max-width: 700px) {
   .headerTop {
-    margin: 0 40px 10px;
+    margin: 0 20px 10px;
   }
 }
+
+/*Адаптив*/
