@@ -8,7 +8,7 @@ export default function CartList() {
     <Container>
       {
         cartItems.map((elem)=>(
-          <Row className='my-5' key={Date.now()}>
+          <Row className='my-5' key={elem.text}>
             <Col><img height={150} src={elem.src} /></Col>
             <Col>{elem.text}</Col>
             <Col>{elem.currentPrice} Р</Col>
