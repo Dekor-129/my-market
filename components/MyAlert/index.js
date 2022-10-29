@@ -17,7 +17,7 @@ export default function MyAlert() {
         className={classes.alertDiv}
       >
         <Alert className={classes.alert}>
-          Ваш заказ '{items[items.length - 1].text}' добавлен в корзину!
+          {`Ваш заказ "${items[items.length - 1].text}" добавлен в корзину!`}
         </Alert>
       </motion.div>}
     </>
