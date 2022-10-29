@@ -10,11 +10,16 @@ export default function ProductCard({ elem, setButton }) {
         name = { elem.name } 
         src = { elem.src }  
       />
-      <ProductDescription elem = {elem} />
+      <ProductDescription elem = { elem } />
       {
         setButton 
         ? <div className={classes.buttonBlock}>
-            <CardButton />
+          <div className={classes.priceBlock}>
+            <span>Цена: </span>
+            <span className={classes.currentPrice}>{ elem.currentPrice}</span>
+            <span className={classes.price}>{ elem.price}</span>
+          </div>
+            <CardButton elem={ elem }/>
           </div>
         : <></>
       }

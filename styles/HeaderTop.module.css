@@ -19,14 +19,11 @@
 
 .buttonCart {
   cursor: pointer;
+  z-index: 5;
 }
 
 .buttonCart a {
   color: #4D689C
-}
-
-.buttonCart a:hover {
-  color: #e75413
 }
 
 /*Адаптив*/

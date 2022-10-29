@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <>
       <MainContainer title = 'Фигурные свечи'>
-      <div className="spinner-border" role="status"></div>
-      
+        <h2 className="text-center">Главная</h2>
+        <div style={{height: 700}}></div>
       </MainContainer>
     </>   
   )

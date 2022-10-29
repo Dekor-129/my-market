@@ -34,12 +34,29 @@
 
 .textDesc {
   text-align: center;
-
+  padding: 10px;
 }
+
+.priceBlock {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.currentPrice {
+  padding: 0 5px;
+}
+
+.price {
+  color: #b7b9bd;
+  padding: 0 5px;
+  text-decoration-line: line-through;
+  font-size:medium
+}
+
 
 .buttonBlock {
   display: flex;
-  justify-content: flex-end;
+  justify-content:space-between
 }
 
 .buttonSendToCart {

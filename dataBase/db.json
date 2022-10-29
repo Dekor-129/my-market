@@ -4,90 +4,116 @@
     "name": "pony",
     "src": "/candles/pony.jpg",
     "text": "Пони",
-    "type": "shaped-candles"
+    "type": "shaped-candles",
+    "price": 250,
+    "currentPrice": 200
   },
   {
     "id": 2,
     "name": "elka1",
     "src": "/candles/elka1.jpg",
-    "text": "Елка",
-    "type": "shaped-candles"
+    "text": "Ель",
+    "type": "shaped-candles",
+    "price": 400,
+    "currentPrice": 300
   },
   {
     "id": 3,
     "name": "elka2",
     "src": "/candles/elka2.jpg",
     "text": "Елка",
-    "type": "shaped-candles"
+    "type": "shaped-candles",
+    "price": 400,
+    "currentPrice": 300
   },
   {
     "id": 4,
     "name": "medved",
     "src": "/candles/medved.jpg",
     "text": "Медвежонок",
-    "type": "shaped-candles"
+    "type": "shaped-candles",
+    "price": 250,
+    "currentPrice": 200
   },
   {
     "id": 5,
     "name": "rabbit",
     "src": "/candles/mouse.jpg",
     "text": "Кролик",
-    "type": "shaped-candles"
+    "type": "shaped-candles",
+    "price": 250,
+    "currentPrice": 200
   },
   {
     "id": 7,
     "name": "romanticpara",
     "src": "/candles/romanticpara.jpg",
     "text": "Нежность",
-    "type": "shaped-candles"
+    "type": "shaped-candles",
+    "price": 400,
+    "currentPrice": 300
   },
   {
     "id": 8,
     "name": "serdcecolonna",
     "src": "/candles/serdcecolonna.jpg",
     "text": "Сердце",
-    "type": "shaped-candles"
+    "type": "shaped-candles",
+    "price": 250,
+    "currentPrice": 200
   },
   {
     "id": 9,
     "name": "serdce-geometry",
     "src": "/candles/serdcegeometria.jpg",
     "text": "Сердце",
-    "type": "shaped-candles"
+    "type": "shaped-candles",
+    "price": 250,
+    "currentPrice": 200
   },
   {
     "id": 10,
     "name": "geometry",
     "src": "/candles/geometry.jpg",
     "text": "Геометрия",
-    "type": "shaped-candles"
+    "type": "shaped-candles",
+    "price": 250,
+    "currentPrice": 200
   },
   {
     "id": 11,
     "name": "sova",
     "src": "/candles/sova.jpg",
     "text": "Сова",
-    "type": "shaped-candles"
+    "type": "shaped-candles",
+    "price": 400,
+    "currentPrice": 300
   },
   {
     "id": 12,
     "name": "rose",
     "src": "/candles/rose.jpg",
     "text": "Роза",
-    "type": "shaped-candles"
+    "type": "shaped-candles",
+    "price": 400,
+    "currentPrice": 300
   },
   {
     "id": 13,
     "name": "rose-colonna",
     "src": "/candles/rose-colonna.jpg",
     "text": "Колонна роз",
-    "type": "shaped-candles"
+    "type": "shaped-candles",
+    "price": 250,
+    "currentPrice": 200
   },
   {
     "id": 14,
     "name": "boginya-bast",
     "src": "/candles/boginya-bast.jpg",
     "text": "Богиня Баст",
-    "type": "shaped-candles"
+    "type": "shaped-candles",
+    "price": 600,
+    "currentPrice": 400
   }
 ]

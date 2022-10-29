@@ -6,6 +6,7 @@ import classes from "../../styles/Alert.module.css"
 export default function MyAlert() {
   const alert = useSelector((state)=> state.animate.showAlert)
   const alertVariants = useSelector((state)=> state.animate.alertVariants)
+  const items = useSelector((state)=> state.items.cartItems)
 
   return (
     <>
@@ -16,7 +17,7 @@ export default function MyAlert() {
         className={classes.alertDiv}
       >
         <Alert className={classes.alert}>
-          Ваш заказ {'success'} Добавлен в корзину!
+          Ваш заказ "{items[items.length - 1].text}" добавлен в корзину!
         </Alert>
       </motion.div>}
     </>

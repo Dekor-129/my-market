@@ -3,11 +3,11 @@ import { useDispatch } from 'react-redux'
 import { addNumAction } from '../../store/itemsReducer'
 import { rotatePlus, rotateMinus, showAlert } from '../../store/animateReduser'
 
-export default function CardButton() {
+export default function CardButton({ elem }) {
   const dispatch = useDispatch()
 
   const addNum = () =>{
-    dispatch(addNumAction(1));
+    dispatch(addNumAction(elem));
     dispatch(showAlert(true));
     setTimeout(()=>dispatch(showAlert(false)), 2500)
   }
