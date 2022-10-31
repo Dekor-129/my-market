@@ -1,6 +1,7 @@
 import classes from '../../styles/ProductCard.module.css'
 import Link from 'next/link'
 import {useRouter} from 'next/router'
+import Image from 'next/image'
 
 export default function ProductImg({ name, src }) {
   const router = useRouter()
@@ -8,7 +9,14 @@ export default function ProductImg({ name, src }) {
   return (
     <Link href={`${router.pathname}/${name}`}>
       <a>
-        <img className={ classes.img } src={ src } />
+        <Image 
+          className={ classes.img } 
+          src={ src } 
+          width={250}
+          height={250}
+          placeholder={'blur'}
+          blurDataURL
+          />
       </a>
     </Link>
   )
