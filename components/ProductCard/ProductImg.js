@@ -8,16 +8,18 @@ export default function ProductImg({ name, src }) {
   
   return (
     <Link href={`${router.pathname}/${name}`}>
-      <a>
-        <Image 
-          className={ classes.img } 
-          src={ src } 
-          width={250}
-          height={250}
-          placeholder={'blur'}
-          blurDataURL
-          />
-      </a>
+      <div className='d-flex justify-content-center'>
+        <a>
+          <Image 
+            className={ classes.img } 
+            src={ src } 
+            width={300}
+            height={300}
+            placeholder={'blur'}
+            blurDataURL
+            />
+        </a>
+      </div>
     </Link>
   )
 }

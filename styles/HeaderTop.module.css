@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 0 130px 20px 245px;
+  margin: 0 0 20px 0;
 }
 
 .logoBlock {
@@ -25,42 +25,3 @@
 .buttonCart a {
   color: #4D689C
 }
-
-/*Адаптив*/
-
-@media (max-width: 2500px) {
-  .headerTop {
-    margin-left: 100px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .headerTop {
-    margin-left: 150px;
-  }
-}
-@media (max-width: 1160px) {
-  .headerTop {
-    margin: 0 50px 10px;
-  }
-}
-
-@media (max-width: 1060px) {
-  .headerTop {
-    margin: 0 50px 10px;
-  }
-}
-
-@media (max-width: 800px) {
-  .headerTop {
-    margin: 0 50px 10px;
-  }
-}
-
-@media (max-width: 700px) {
-  .headerTop {
-    margin: 0 20px 10px;
-  }
-}
-
-/*Адаптив*/

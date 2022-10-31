@@ -17,7 +17,6 @@ header {
   background-color: #fff;
   position: fixed;
   width: 100%;
-  margin-top: 0;
   z-index: 99;
 }
 
@@ -34,17 +33,11 @@ a {
 
 }
 
-
-
-img {
-  width: auto;
-}
 /*Общее*/
 
 /*Блок пути*/
 
 .blockPath {
-  margin: 20px 0 0 245px;
   font-weight: 600;
   font-size: 20px;
 }
@@ -59,20 +52,3 @@ img {
 
 /*Блок пути*/
 
-@media (max-width: 1200px) {
-  .blockPath {
-    margin-left: 200px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .blockPath {
-    margin-left: 100px;
-  }
-}
-
-@media (max-width: 700px) {
-  .blockPath {
-    margin-left: 50px;
-  }
-}
