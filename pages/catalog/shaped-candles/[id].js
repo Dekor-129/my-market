@@ -5,8 +5,12 @@ import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import { useRouter } from 'next/router';
 
 export default function Posts({product}) {
+  const router = useRouter()
+  //product = product.filter((elem)=> elem.name === router.query.id)[0]
+  
   return (
     <MainContainer title = { product.text }>
       <Container>
@@ -54,8 +58,7 @@ export default function Posts({product}) {
 
 export async function getServerSideProps(context) {
   const router = context.query.id
-  console.log(router);
-  const product = db.filter((elem)=> elem.name === router)[0]
+  const product = await db.filter((elem)=> elem.name === router)[0]
 
   return {
     props: { product }, // will be passed to the page component as props

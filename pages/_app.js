@@ -23,11 +23,13 @@ function MyApp({ Component, pageProps }) {
 
 
   return (
+    <SSRProvider>
       <Provider store = {store}>
-        <SSRProvider>
+        
           <Component {...pageProps} />
-        </SSRProvider>
+        
       </Provider>
+      </SSRProvider>
   )
 }
 

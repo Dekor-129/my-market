@@ -8,8 +8,7 @@ export default function ProductPage(props) {
       src={ props.src } 
       width={500}
       height={500}
-      placeholder={'blur'}
-      blurDataURL
+      
     />
   )
 }
