@@ -7,7 +7,6 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
 export default function Posts({product}) {
-
   return (
     <MainContainer title = { product.text }>
       <Container>
@@ -55,7 +54,8 @@ export default function Posts({product}) {
 
 export async function getServerSideProps(context) {
   const router = context.query.id
-  const product = await db.filter((elem)=> elem.name === router)[0]
+  console.log(router);
+  const product = db.filter((elem)=> elem.name === router)[0]
 
   return {
     props: { product }, // will be passed to the page component as props
