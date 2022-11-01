@@ -1,20 +1,20 @@
 [
   {
     "id": 1,
-    "name": "shaped-candles",
-    "src": "/catalogImg/form-candle.jpg",
-    "text": "Формовые свечи"
+    "path": "shaped-candles",
+    "name": "Формовые свечи",
+    "src": "/catalogImg/form-candle.jpg"
   },
   {
     "id": 2,
-    "name": "scented-candles",
-    "src": "/catalogImg/aroma-candle.jpg",
-    "text": "Ароматические свечи"
+    "path": "scented-candles",
+    "name": "Ароматические свечи",
+    "src": "/catalogImg/aroma-candle.jpg"
   },
   {
     "id": 3,
-    "name": "voshina-candles",
-    "src": "/catalogImg/voshina.jpg",
-    "text": "Свечи из вощины"
+    "path": "voshina-candles",
+    "name": "Свечи из вощины",
+    "src": "/catalogImg/voshina.jpg"
   }
 ]

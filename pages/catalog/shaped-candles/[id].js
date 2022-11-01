@@ -9,10 +9,9 @@ import { useRouter } from 'next/router';
 
 export default function Posts({product}) {
   const router = useRouter()
-  //product = product.filter((elem)=> elem.name === router.query.id)[0]
   
   return (
-    <MainContainer title = { product.text }>
+    <MainContainer title = { product.name }>
       <Container>
         <div className='blockPath'>
           <Link href={'/'}>
@@ -24,7 +23,7 @@ export default function Posts({product}) {
           <Link href={'/catalog/shaped-candles'}>
             <a>Форменые свечи / </a>
           </Link>
-          <Link href={`/catalog/shaped-candles/${product.name}`}>
+          <Link href={`/catalog/shaped-candles/${product.path}`}>
             <a><span>{product.text}</span></a>
           </Link>
         </div>
@@ -37,7 +36,7 @@ export default function Posts({product}) {
           </Col>
           <Col lg={6}>
             <Tabs
-              defaultActiveKey="profile"
+              defaultActiveKey="home"
               id="uncontrolled-tab-example"
               className="mb-3"
             >
@@ -58,7 +57,7 @@ export default function Posts({product}) {
 
 export async function getServerSideProps(context) {
   const router = context.query.id
-  const product = await db.filter((elem)=> elem.name === router)[0]
+  const product = await db.filter((elem)=> elem.path === router)[0]
 
   return {
     props: { product }, // will be passed to the page component as props

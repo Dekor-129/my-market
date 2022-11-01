@@ -1,7 +1,8 @@
 [
   {
     "id": 1,
-    "name": "pony",
+    "path": "pony",
+    "name": "Пони",
     "src": "/candles/pony.jpg",
     "text": "Пони",
     "type": "shaped-candles",
@@ -10,7 +11,8 @@
   },
   {
     "id": 2,
-    "name": "elka1",
+    "path": "pony",
+    "name": "Ель",
     "src": "/candles/elka1.jpg",
     "text": "Ель",
     "type": "shaped-candles",
@@ -19,7 +21,8 @@
   },
   {
     "id": 3,
-    "name": "elka2",
+    "path": "pony",
+    "name": "Елка",
     "src": "/candles/elka2.jpg",
     "text": "Елка",
     "type": "shaped-candles",
@@ -28,7 +31,8 @@
   },
   {
     "id": 4,
-    "name": "medved",
+    "path": "pony",
+    "name": "Медвежонок",
     "src": "/candles/medved.jpg",
     "text": "Медвежонок",
     "type": "shaped-candles",
@@ -37,16 +41,18 @@
   },
   {
     "id": 5,
-    "name": "rabbit",
+    "path": "pony",
+    "name": "Кролик",
     "src": "/candles/mouse.jpg",
     "text": "Кролик",
     "type": "shaped-candles",
-    "price": 250,
-    "currentPrice": 200
+    "price": 300,
+    "currentPrice": 250
   },
   {
     "id": 7,
-    "name": "romanticpara",
+    "path": "pony",
+    "name": "Нежность",
     "src": "/candles/romanticpara.jpg",
     "text": "Нежность",
     "type": "shaped-candles",
@@ -55,7 +61,8 @@
   },
   {
     "id": 8,
-    "name": "serdcecolonna",
+    "path": "pony",
+    "name": "Сердце",
     "src": "/candles/serdcecolonna.jpg",
     "text": "Сердце",
     "type": "shaped-candles",
@@ -64,7 +71,8 @@
   },
   {
     "id": 9,
-    "name": "serdce-geometry",
+    "path": "pony",
+    "name": "Сердце",
     "src": "/candles/serdcegeometria.jpg",
     "text": "Сердце",
     "type": "shaped-candles",
@@ -73,7 +81,8 @@
   },
   {
     "id": 10,
-    "name": "geometry",
+    "path": "pony",
+    "name": "Геометрия",
     "src": "/candles/geometry.jpg",
     "text": "Геометрия",
     "type": "shaped-candles",
@@ -82,7 +91,8 @@
   },
   {
     "id": 11,
-    "name": "sova",
+    "path": "pony",
+    "name": "Сова",
     "src": "/candles/sova.jpg",
     "text": "Сова",
     "type": "shaped-candles",
@@ -91,7 +101,8 @@
   },
   {
     "id": 12,
-    "name": "rose",
+    "path": "pony",
+    "name": "Роза",
     "src": "/candles/rose.jpg",
     "text": "Роза",
     "type": "shaped-candles",
@@ -100,7 +111,8 @@
   },
   {
     "id": 13,
-    "name": "rose-colonna",
+    "path": "pony",
+    "name": "Колонна роз",
     "src": "/candles/rose-colonna.jpg",
     "text": "Колонна роз",
     "type": "shaped-candles",
@@ -109,11 +121,22 @@
   },
   {
     "id": 14,
-    "name": "boginya-bast",
+    "path": "pony",
+    "name": "Богиня Баст",
     "src": "/candles/boginya-bast.jpg",
     "text": "Богиня Баст",
     "type": "shaped-candles",
     "price": 600,
     "currentPrice": 400
+  },
+  {
+    "id": 15,
+    "path": "pony",
+    "name": "Bubble",
+    "src": "/candles/bubble.jpg",
+    "text": "Bubble",
+    "type": "shaped-candles",
+    "price": 450,
+    "currentPrice": 350
   }
 ]

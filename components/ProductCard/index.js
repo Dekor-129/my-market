@@ -7,7 +7,7 @@ export default function ProductCard({ elem, setButton }) {
   return (
     <div className={ classes.card }>
       <ProductImg 
-        name = { elem.name } 
+        path = { elem.path } 
         src = { elem.src }  
       />
       <ProductDescription elem = { elem } />

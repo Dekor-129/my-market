@@ -3,11 +3,11 @@ import Link from 'next/link'
 import {useRouter} from 'next/router'
 import Image from 'next/image'
 
-export default function ProductImg({ name, src }) {
+export default function ProductImg({ path, src }) {
   const router = useRouter()
   
   return (
-    <Link href={`${router.pathname}/${name}`}>
+    <Link href={`${router.pathname}/${path}`}>
       <div className='d-flex justify-content-center'>
         <a>
           <Image 
