@@ -11,9 +11,9 @@
   },
   {
     "id": 2,
-    "path": "pony",
+    "path": "el",
     "name": "Ель",
-    "src": "/candles/elka1.jpg",
+    "src": "/candles/el.jpg",
     "text": "Ель",
     "type": "shaped-candles",
     "price": 400,
@@ -21,9 +21,9 @@
   },
   {
     "id": 3,
-    "path": "pony",
+    "path": "elka",
     "name": "Елка",
-    "src": "/candles/elka2.jpg",
+    "src": "/candles/elka.jpg",
     "text": "Елка",
     "type": "shaped-candles",
     "price": 400,
@@ -31,7 +31,7 @@
   },
   {
     "id": 4,
-    "path": "pony",
+    "path": "medved",
     "name": "Медвежонок",
     "src": "/candles/medved.jpg",
     "text": "Медвежонок",
@@ -41,7 +41,7 @@
   },
   {
     "id": 5,
-    "path": "pony",
+    "path": "rabbit",
     "name": "Кролик",
     "src": "/candles/mouse.jpg",
     "text": "Кролик",
@@ -51,7 +51,7 @@
   },
   {
     "id": 7,
-    "path": "pony",
+    "path": "romanticpara",
     "name": "Нежность",
     "src": "/candles/romanticpara.jpg",
     "text": "Нежность",
@@ -61,27 +61,27 @@
   },
   {
     "id": 8,
-    "path": "pony",
-    "name": "Сердце",
+    "path": "serdcecolonna",
+    "name": "Сердце колонна",
     "src": "/candles/serdcecolonna.jpg",
-    "text": "Сердце",
+    "text": "Сердце колонна",
     "type": "shaped-candles",
     "price": 250,
     "currentPrice": 200
   },
   {
     "id": 9,
-    "path": "pony",
-    "name": "Сердце",
+    "path": "serdce-geometry",
+    "name": "Сердце геометрия",
     "src": "/candles/serdcegeometria.jpg",
-    "text": "Сердце",
+    "text": "Сердце геометрия",
     "type": "shaped-candles",
     "price": 250,
     "currentPrice": 200
   },
   {
     "id": 10,
-    "path": "pony",
+    "path": "geometry",
     "name": "Геометрия",
     "src": "/candles/geometry.jpg",
     "text": "Геометрия",
@@ -91,7 +91,7 @@
   },
   {
     "id": 11,
-    "path": "pony",
+    "path": "sova",
     "name": "Сова",
     "src": "/candles/sova.jpg",
     "text": "Сова",
@@ -101,7 +101,7 @@
   },
   {
     "id": 12,
-    "path": "pony",
+    "path": "rose",
     "name": "Роза",
     "src": "/candles/rose.jpg",
     "text": "Роза",
@@ -111,7 +111,7 @@
   },
   {
     "id": 13,
-    "path": "pony",
+    "path": "rose-colonna",
     "name": "Колонна роз",
     "src": "/candles/rose-colonna.jpg",
     "text": "Колонна роз",
@@ -121,7 +121,7 @@
   },
   {
     "id": 14,
-    "path": "pony",
+    "path": "boginya-bast",
     "name": "Богиня Баст",
     "src": "/candles/boginya-bast.jpg",
     "text": "Богиня Баст",
@@ -131,7 +131,7 @@
   },
   {
     "id": 15,
-    "path": "pony",
+    "path": "bubble",
     "name": "Bubble",
     "src": "/candles/bubble.jpg",
     "text": "Bubble",
