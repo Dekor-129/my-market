@@ -5,10 +5,8 @@ import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import { useRouter } from 'next/router';
 
-export default function Posts({product}) {
-  const router = useRouter()
+export default function Posts({ product }) {
   
   return (
     <MainContainer title = { product.name }>
@@ -24,7 +22,7 @@ export default function Posts({product}) {
             <a>Форменые свечи / </a>
           </Link>
           <Link href={`/catalog/shaped-candles/${product.path}`}>
-            <a><span>{product.text}</span></a>
+            <a><span>{product.name}</span></a>
           </Link>
         </div>
       </Container>
@@ -36,14 +34,14 @@ export default function Posts({product}) {
           </Col>
           <Col lg={6}>
             <Tabs
-              defaultActiveKey="home"
+              defaultActiveKey="description"
               id="uncontrolled-tab-example"
               className="mb-3"
             >
-              <Tab eventKey="home" title="Home">
-                Text
+              <Tab eventKey="description" title="Описание">
+                <p>{product.description}</p>
               </Tab>
-              <Tab eventKey="profile" title="Profile">
+              <Tab eventKey="parameter" title="Характеристики">
                 Text
               </Tab>
             </Tabs>

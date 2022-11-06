@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import CloseButton from 'react-bootstrap/CloseButton';
+import MyForm from '../MyForm';
 
 export default function MyModal({show, onHide, close}) {
   return (
@@ -13,21 +14,16 @@ export default function MyModal({show, onHide, close}) {
     >
       <Modal.Header>
         <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
+          Заполните форму заказа
         </Modal.Title>
         <CloseButton onClick={close} />
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
+        <MyForm />
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={close}>Close</Button>
-      </Modal.Footer>
+      {/*<Modal.Footer>
+        <Button type='submit' onClick={close}>Отправить</Button>
+  </Modal.Footer>*/}
     </Modal>
   );
-}
+} 
