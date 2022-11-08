@@ -15,13 +15,22 @@ const defaultStore = {
 export const itemsReducer = (state = defaultStore, action) =>{
   switch(action.type) {
       case ADD:
-          return {
+        return Array.isArray(action.payload)
+        ? {
             ...state, 
-            cartItems: [...state.cartItems, action.payload],
+            cartItems: [...state.cartItems, ...action.payload],
             sortedCart: 
               state.cartItems.filter((el)=> el.id === action.payload.id).length > 0 
               ? [...state.sortedCart] 
-              : [...state.sortedCart, action.payload] 
+              : [...state.sortedCart, action.payload[0]] 
+          }
+        : {
+          ...state, 
+          cartItems: [...state.cartItems, action.payload],
+          sortedCart: 
+            state.cartItems.filter((el)=> el.id === action.payload.id).length > 0 
+            ? [...state.sortedCart] 
+            : [...state.sortedCart, action.payload] 
         }
       case DELETE:
           return {
