@@ -3,7 +3,7 @@ const adress = `https://api.telegram.org/bot5376669546:AAE0deUBmzw2rs0g2-bjNzsH0
 
 export default async function handler(req, res) {
   console.log(req.body);
-  const form = req.body
+  const form = JSON.parse(req.body)
 
   const formText = `
   Имя: ${form.name}             
