@@ -15,7 +15,8 @@ export default function ProductImg({ path, src }) {
             src={ src } 
             width={300}
             height={300}
-            
+            placeholder="blur"
+            blurDataURL={`data:${src};base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOsn3WuHgAF7wJoVTITfAAAAABJRU5ErkJggg==`}
             />
         </a>
       </div>

@@ -3,18 +3,18 @@
     "id": 1,
     "path": "shaped-candles",
     "name": "Формовые свечи",
-    "src": "/catalogImg/form-candle.jpg"
+    "src": "/catalogImg/form-candle.jpeg"
   },
   {
     "id": 2,
     "path": "scented-candles",
     "name": "Ароматические свечи",
-    "src": "/catalogImg/aroma-candle.jpg"
+    "src": "/catalogImg/aroma-candle.jpeg"
   },
   {
     "id": 3,
     "path": "voshina-candles",
     "name": "Свечи из вощины",
-    "src": "/catalogImg/voshina.jpg"
+    "src": "/catalogImg/voshina.jpeg"
   }
 ]

@@ -8,10 +8,12 @@ import ProductCart from './ProductCart'
 import QTYCart from './QTYCart'
 import TrashCart from './TrashCart'
 
-export default function CartList() {
+export default function CartList({showSuccess}) {
   const cartItems = useSelector((state)=> state.items.cartItems)
   const sortedCart = useSelector((state)=> state.items.sortedCart)
   const [modalShow, setModalShow] = useState(false)
+  console.log(cartItems);
+  console.log(sortedCart);
 
   return (
     <>
@@ -49,7 +51,8 @@ export default function CartList() {
         <MyModal
           show={modalShow}
           onHide={() => setModalShow(true)}
-          close={() => setModalShow(false)}
+          onClose={setModalShow}
+          showSuccess={showSuccess}
         />
       </Container>
     </>

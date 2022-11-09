@@ -3,18 +3,22 @@ import classes from '../../styles/Cart.module.css'
 import { useDispatch } from 'react-redux'
 import { fullDeleteProductAction } from '../../store/itemsReducer'
 
-export default function TrashCart(props) {
+export default function TrashCart({elem, cartItems}) {
   const dispatch = useDispatch()
 
   const deleteProduct = ()=> {
-    dispatch(fullDeleteProductAction(props.elem));
+    dispatch(fullDeleteProductAction( elem));
   }
   return (
     <Col className="text-center  align-self-center">
       <Container>
         <Row >
           <Col className="text-center  align-self-center">
-            {props.cartItems.filter((el)=> el.id === props.elem.id).reduce((sum, current)=> sum + current.currentPrice , 0)} P
+            {
+            elem.parameter.coloring 
+            ? cartItems.filter((el)=> el.id === elem.id).reduce((sum, current)=> sum + elem.currentPrice + current.coloringPrice , 0)
+            : cartItems.filter((el)=> el.id === elem.id).reduce((sum, current)=> sum + current.currentPrice , 0)
+            } P
             <span onClick={deleteProduct} className={"ms-1 " + classes.trashCart}>
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-trash" viewBox="0 0 16 16">
                 <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>

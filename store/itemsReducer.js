@@ -3,6 +3,7 @@ import catalogItems from '../dataBase/catalogDB.json'
 
 const ADD = 'ADD'
 const DELETE = 'DELETE'
+const FULL_DELETE_PRODUCT = 'FULL_DELETE_PRODUCT'
 const FULL_DELETE = 'FULL_DELETE'
 
 const defaultStore = {
@@ -28,7 +29,7 @@ export const itemsReducer = (state = defaultStore, action) =>{
           ...state, 
           cartItems: [...state.cartItems, action.payload],
           sortedCart: 
-            state.cartItems.filter((el)=> el.id === action.payload.id).length > 0 
+            state.cartItems.filter((el)=> el.id === action.payload.id &&  el.currentPrice === action.payload.currentPrice).length > 0 
             ? [...state.sortedCart] 
             : [...state.sortedCart, action.payload] 
         }
@@ -44,11 +45,17 @@ export const itemsReducer = (state = defaultStore, action) =>{
               ? [...state.sortedCart]
               : [...sortedCart.filter((elem)=> elem.id !== action.payload.id)]
           }
-      case FULL_DELETE:
+      case FULL_DELETE_PRODUCT:
         return {
           ...state,
           cartItems: [...state.cartItems.filter((elem)=> elem.id !== action.payload.id)],
           sortedCart: [...state.sortedCart.filter((elem)=> elem.id !== action.payload.id)]
+        }
+      case FULL_DELETE:
+        return {
+          ...state,
+          cartItems: [],
+          sortedCart: []
         }
       default: 
           return state
@@ -66,6 +73,10 @@ export const deleteProductAction = (payload) =>({
 })
 
 export const fullDeleteProductAction = (payload) =>({
-  type: FULL_DELETE,
+  type: FULL_DELETE_PRODUCT,
   payload
+})
+
+export const fullDeleteAction = () =>({
+  type: FULL_DELETE
 })

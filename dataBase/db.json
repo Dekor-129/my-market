@@ -3,11 +3,12 @@
     "id": 1,
     "path": "pony",
     "name": "Пони",
-    "src": "/candles/pony.jpg",
+    "src": "/candles/pony.jpeg",
     "description": "Пони",
     "type": "shaped-candles",
     "price": 250,
     "currentPrice": 200,
+    "coloringPrice": 50,
     "parameter": {
       "weight": 37,
       "height": 0,
@@ -21,15 +22,17 @@
     "id": 2,
     "path": "el",
     "name": "Ель",
-    "src": "/candles/el.jpg",
+    "src": "/candles/el.jpeg",
     "description": "Ель",
     "type": "shaped-candles",
     "price": 400,
     "currentPrice": 300,
+    "coloringPrice": 50,
     "parameter": {
       "weight": 0,
       "height": 0,
       "color": "natural",
+      "colorName": "Натуральный",
       "scented": false,
       "coloring": false
     }
@@ -38,15 +41,17 @@
     "id": 3,
     "path": "elka",
     "name": "Елка",
-    "src": "/candles/elka.jpg",
+    "src": "/candles/elka.jpeg",
     "description": "Елка",
     "type": "shaped-candles",
     "price": 400,
     "currentPrice": 300,
+    "coloringPrice": 50,
     "parameter": {
       "weight": 0,
       "height": 0,
       "color": "natural",
+      "colorName": "Натуральный",
       "scented": false,
       "coloring": false
     }
@@ -55,15 +60,17 @@
     "id": 4,
     "path": "medved",
     "name": "Медвежонок",
-    "src": "/candles/medved.jpg",
+    "src": "/candles/medved.jpeg",
     "description": "Медвежонок",
     "type": "shaped-candles",
     "price": 250,
     "currentPrice": 200,
+    "coloringPrice": 50,
     "parameter": {
       "weight": 0,
       "height": 0,
       "color": "natural",
+      "colorName": "Натуральный",
       "scented": false,
       "coloring": false
     }
@@ -72,15 +79,17 @@
     "id": 5,
     "path": "rabbit",
     "name": "Кролик",
-    "src": "/candles/mouse.jpg",
+    "src": "/candles/mouse.jpeg",
     "description": "Кролик",
     "type": "shaped-candles",
     "price": 300,
     "currentPrice": 250,
+    "coloringPrice": 50,
     "parameter": {
       "weight": 100,
       "height": 0,
       "color": "natural",
+      "colorName": "Натуральный",
       "scented": false,
       "coloring": false
     }
@@ -89,15 +98,17 @@
     "id": 7,
     "path": "romanticpara",
     "name": "Нежность",
-    "src": "/candles/romanticpara.jpg",
+    "src": "/candles/romanticpara.jpeg",
     "description": "Нежность",
     "type": "shaped-candles",
     "price": 450,
     "currentPrice": 350,
+    "coloringPrice": 50,
     "parameter": {
       "weight": 100,
       "height": 0,
       "color": "natural",
+      "colorName": "Натуральный",
       "scented": false,
       "coloring": false
     }
@@ -106,15 +117,17 @@
     "id": 8,
     "path": "serdcecolonna",
     "name": "Сердце колонна",
-    "src": "/candles/serdcecolonna.jpg",
+    "src": "/candles/serdcecolonna.jpeg",
     "description": "Сердце колонна",
     "type": "shaped-candles",
     "price": 250,
     "currentPrice": 200,
+    "coloringPrice": 50,
     "parameter": {
       "weight": 75,
       "height": 0,
       "color": "natural",
+      "colorName": "Натуральный",
       "scented": false,
       "coloring": false
     }
@@ -123,15 +136,17 @@
     "id": 9,
     "path": "serdce-geometry",
     "name": "Сердце геометрия",
-    "src": "/candles/serdcegeometria.jpg",
+    "src": "/candles/serdcegeometria.jpeg",
     "description": "Сердце геометрия",
     "type": "shaped-candles",
     "price": 250,
     "currentPrice": 200,
+    "coloringPrice": 50,
     "parameter": {
       "weight": 38,
       "height": 0,
       "color": "natural",
+      "colorName": "Натуральный",
       "scented": false,
       "coloring": false
     }
@@ -140,15 +155,17 @@
     "id": 10,
     "path": "geometry",
     "name": "Геометрия",
-    "src": "/candles/geometry.jpg",
+    "src": "/candles/geometry.jpeg",
     "description": "Геометрия",
     "type": "shaped-candles",
     "price": 250,
     "currentPrice": 200,
+    "coloringPrice": 50,
     "parameter": {
       "weight": 70,
       "height": 0,
       "color": "natural",
+      "colorName": "Натуральный",
       "scented": false,
       "coloring": false
     }
@@ -157,15 +174,17 @@
     "id": 11,
     "path": "sova",
     "name": "Сова",
-    "src": "/candles/sova.jpg",
+    "src": "/candles/sova.jpeg",
     "description": "Сова",
     "type": "shaped-candles",
     "price": 400,
     "currentPrice": 300,
+    "coloringPrice": 50,
     "parameter": {
       "weight": 80,
       "height": 0,
       "color": "natural",
+      "colorName": "Натуральный",
       "scented": false,
       "coloring": false
     }
@@ -174,15 +193,17 @@
     "id": 12,
     "path": "rose",
     "name": "Роза",
-    "src": "/candles/rose.jpg",
+    "src": "/candles/rose.jpeg",
     "description": "Роза",
     "type": "shaped-candles",
     "price": 400,
     "currentPrice": 300,
+    "coloringPrice": 50,
     "parameter": {
       "weight": 80,
       "height": 0,
       "color": "natural",
+      "colorName": "Натуральный",
       "scented": false,
       "coloring": false
     }
@@ -191,15 +212,17 @@
     "id": 13,
     "path": "rose-colonna",
     "name": "Колонна роз",
-    "src": "/candles/rose-colonna.jpg",
+    "src": "/candles/rose-colonna.jpeg",
     "description": "Колонна роз",
     "type": "shaped-candles",
     "price": 250,
     "currentPrice": 200,
+    "coloringPrice": 50,
     "parameter": {
       "weight": 80,
       "height": 0,
       "color": "natural",
+      "colorName": "Натуральный",
       "scented": false,
       "coloring": false
     }
@@ -208,15 +231,17 @@
     "id": 14,
     "path": "boginya-bast",
     "name": "Богиня Баст",
-    "src": "/candles/boginya-bast.jpg",
+    "src": "/candles/boginya-bast.jpeg",
     "description": "Богиня Баст",
     "type": "shaped-candles",
     "price": 600,
     "currentPrice": 400,
+    "coloringPrice": 50,
     "parameter": {
       "weight": 56,
       "height": 15.6,
       "color": "natural",
+      "colorName": "Натуральный",
       "scented": false,
       "coloring": false
     }
@@ -225,15 +250,17 @@
     "id": 15,
     "path": "bubble",
     "name": "Bubble",
-    "src": "/candles/bubble.jpg",
+    "src": "/candles/bubble.jpeg",
     "description": "Bubble",
     "type": "shaped-candles",
     "price": 450,
     "currentPrice": 350,
+    "coloringPrice": 50,
     "parameter": {
       "weight": 130,
       "height": 0,
       "color": "natural",
+      "colorName": "Натуральный",
       "scented": false,
       "coloring": false
     }
@@ -242,15 +269,17 @@
     "id": 16,
     "path": "minibubble",
     "name": "Mini Bubble",
-    "src": "/candles/mini-bubble.jpg",
+    "src": "/candles/mini-bubble.jpeg",
     "description": "Mini Bubble",
     "type": "shaped-candles",
     "price": 200,
     "currentPrice": 150,
+    "coloringPrice": 50,
     "parameter": {
       "weight": 40,
       "height": 0,
       "color": "natural",
+      "colorName": "Натуральный",
       "scented": false,
       "coloring": false
     }

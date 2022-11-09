@@ -1,29 +1,45 @@
-import { useRef, useState } from 'react';
-import { Button } from 'react-bootstrap';
+import { useState } from 'react';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
+import { useDispatch } from 'react-redux'
+import { fullDeleteAction } from '../../../store/itemsReducer'
+import { useSelector } from 'react-redux'
 
-export default function MyForm() {
+export default function MyForm({ onClose, showSuccess }) {
+  const dispatch = useDispatch()
+  const cartItems = useSelector((state)=> state.items.cartItems)
+  const sortedCart = useSelector((state)=> state.items.sortedCart)
+
+  const [validated, setValidated] = useState(false);
   const [form, setForm] = useState({
     name: '',
     email: '',
     tel: '',
     comment: ''
   })
+  
 
   const handleSubmit = async (event)=> {
     event.preventDefault()
-    const formText = `
-    Имя: ${form.name}             
-    Email: ${form.email}            
-    Телефон: ${form.tel}                
-    Комментарий: ${form.comment}`
-    let response = await fetch(`https://my-market-psi.vercel.app/api/send`, {
+    if(form.name === false || form.email === false || form.tel === false) {
+      return
+    }
+
+    const response = await fetch(`http://localhost:3000/api/send`, {
       method: 'POST',
-      body: JSON.stringify(form)
+      body: JSON.stringify({
+        form,
+        cartItems,
+        sortedCart
+      })
+
     });
-    let res =  await response.json()
-    console.log(res);
+    if(response.ok) {
+      onClose(false)
+      dispatch(fullDeleteAction())
+      showSuccess.handleClose(true)
+    }
   }
 
   return (
@@ -37,6 +53,7 @@ export default function MyForm() {
           type="text" 
           placeholder="Имя" 
           value={form.name}
+          required
           onChange={(e)=>{
             setForm({...form, name: e.target.value})
           }}
@@ -51,6 +68,7 @@ export default function MyForm() {
           type="email" 
           placeholder="name@gmail.com" 
           value={form.email}
+          required
           onChange={(e)=>{
             setForm({...form, email: e.target.value})
           }}
@@ -66,6 +84,7 @@ export default function MyForm() {
           type="tel" 
           placeholder="Телефон"
           value={form.tel}
+          required
           onChange={(e)=>{
             setForm({...form, tel: e.target.value})
           }}
@@ -86,7 +105,13 @@ export default function MyForm() {
         />
         
       </FloatingLabel>
-      <Button type='submit'>Отправить</Button>
+      <Container className='mt-3'>
+        <Row className='justify-content-end'>
+          <Col sm={2}>
+            <Button type='submit'>Отправить</Button>
+          </Col>
+        </Row>
+      </Container>
     </Form>
   );
 }

@@ -8,7 +8,8 @@ export default function ProductPage(props) {
       src={ props.src } 
       width={500}
       height={500}
-      
+      placeholder="blur"
+      blurDataURL={`data:${props.src};base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOsn3WuHgAF7wJoVTITfAAAAABJRU5ErkJggg==`}
     />
   )
 }
