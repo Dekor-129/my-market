@@ -18,7 +18,7 @@ export default function MyForm() {
     Email: ${form.email}            
     Телефон: ${form.tel}                
     Комментарий: ${form.comment}`
-    let response = await fetch(`http://localhost:3000/api/send`, {
+    let response = await fetch(`https://my-market-psi.vercel.app/api/send`, {
       method: 'POST',
       body: JSON.stringify(form)
     });
