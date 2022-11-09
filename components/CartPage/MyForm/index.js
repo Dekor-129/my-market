@@ -26,7 +26,7 @@ export default function MyForm({ onClose, showSuccess }) {
       return
     }
 
-    const response = await fetch(`http://localhost:3000/api/send`, {
+    const response = await fetch(`https://my-market-psi.vercel.app/api/send`, {
       method: 'POST',
       body: JSON.stringify({
         form,
