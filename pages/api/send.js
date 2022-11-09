@@ -12,5 +12,5 @@ export default async function handler(req, res) {
   Комментарий: ${form.comment}`
 
   await fetch(adress + formText)
-  res.status(200).json({ message: 'Work' })
+  res.status(200).json({ message: form })
 }
