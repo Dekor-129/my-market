@@ -18,8 +18,12 @@ export default function MyForm() {
     Email: ${form.email}            
     Телефон: ${form.tel}                
     Комментарий: ${form.comment}`
-    let response = await fetch(`https://api.telegram.org/bot5376669546:AAE0deUBmzw2rs0g2-bjNzsH0-IEmB4MRMA/sendMessage?chat_id=-783628550&text=${formText}`);
-    console.log(response);
+    let response = await fetch(`http://localhost:3000/api/send`, {
+      method: 'POST',
+      body: JSON.stringify(form)
+    });
+    let res =  await response.json()
+    console.log(res);
   }
 
   return (
