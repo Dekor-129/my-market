@@ -14,19 +14,24 @@ export default async function handler(req, res) {
     Комментарий: ${form.comment || 'Нет'}\n  
   `
 
-  const cartItemsText = sortedCart.map((el)=>(
+  const cartItemsText = cartItems.map((el, index)=>(
     `
+    ${index + 1} Заказ
     Название: ${el.name}\n  
     Цвет: ${el.parameter.colorName}\n  
     Окрашивание: ${el.parameter.coloring ? 'Да' : 'Нет'}\n  
     Ароматизатор: ${el.parameter.scented ? 'Да' : 'Нет'}\n  
     Цена за штуку: ${el.currentPrice}\n  
-    Количество: ${cartItems.filter((elem)=> el.id === elem.id).length}\n
      ` 
   ))
-  const ordersList  = cartItemsText.join('\n')
+  const ordersList  = cartItemsText.join('                                                                                                                                                    ')
 
 
-  await fetch(adress + formText + ordersList)
+  await fetch(
+    adress 
+    + formText 
+    + '                                                                                                                                                            ' 
+    + ordersList
+  )
   res.status(200).json({ message: form })
 }

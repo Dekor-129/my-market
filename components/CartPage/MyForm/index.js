@@ -11,7 +11,6 @@ export default function MyForm({ onClose, showSuccess }) {
   const cartItems = useSelector((state)=> state.items.cartItems)
   const sortedCart = useSelector((state)=> state.items.sortedCart)
 
-  const [validated, setValidated] = useState(false);
   const [form, setForm] = useState({
     name: '',
     email: '',

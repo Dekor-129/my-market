@@ -1,5 +1,4 @@
 import MainContainer from '../Layouts/MainContainer'
-import classes from '../styles/ProductCard.module.css'
 import ProductCard from '../components/ProductCard';
 import catalogDB from '../dataBase/catalogDB.json'
 import Link from 'next/link'
@@ -27,7 +26,7 @@ export default function Catalog() {
           {
             catalogDB.map((elem) => {
               return(
-                <Col key={elem.id}>
+                <Col className='d-flex justify-content-center' lg={4} md={6} key={elem.id}>
                   <ProductCard elem={elem}/>
                 </Col>
               )

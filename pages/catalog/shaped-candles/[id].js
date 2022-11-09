@@ -6,18 +6,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Form from 'react-bootstrap/Form';
-import { useEffect, useRef, useState } from 'react';
-import { useSelector } from 'react-redux'
-import { useDispatch } from 'react-redux'
+import { useState } from 'react';
 import CardButton from '../../../components/ProductCard/CardButton';
 
 export default function Posts({ product, colors }) {
   const [color, setColor] = useState(colors[0])
   const [coloring, setColoring] = useState(product.parameter.coloring)
   const [quantity, setQuantity] = useState([product])
-
-  //console.log(quantity);
-
 
   const handleColor = (e)=>{
     setColor(...colors.filter((el)=> el.name === e.target.value))
@@ -29,7 +24,6 @@ export default function Posts({ product, colors }) {
   const handleColoring = ()=>{
     setColoring(!coloring)
     product.parameter.coloring = !product.parameter.coloring
-    //coloring ? product.currentPrice =  product.currentPrice + 50 : 
   }
 
   const increment = ()=>{

@@ -12,8 +12,8 @@ export default function CartList({showSuccess}) {
   const cartItems = useSelector((state)=> state.items.cartItems)
   const sortedCart = useSelector((state)=> state.items.sortedCart)
   const [modalShow, setModalShow] = useState(false)
-  console.log(cartItems);
-  console.log(sortedCart);
+  //console.log(cartItems);
+  //console.log(sortedCart);
 
   return (
     <>
@@ -28,7 +28,7 @@ export default function CartList({showSuccess}) {
           sortedCart.map((elem)=>(
             <Row className={' m-5' } key={elem.id}>
               <ProductCart elem={elem} />
-              <PriceCart elem={elem} /> 
+              <PriceCart cartItems={cartItems} elem={elem} /> 
               <QTYCart cartItems={cartItems} elem={elem} /> 
               <TrashCart cartItems={cartItems} elem={elem} />
             </Row>
@@ -38,7 +38,7 @@ export default function CartList({showSuccess}) {
       <Container>
         <Row className='justify-content-end'>
             <Col sm={3}>
-              <h4  className={'text-center mb-3' }>Итого: {cartItems.reduce((sum, current)=> sum + current.currentPrice , 0)} Р</h4>
+              <h4  className={'text-center mb-3' }>Итого: {cartItems.reduce((sum, current)=>  sum + (current.parameter.coloring ? current.currentPrice + current.coloringPrice : current.currentPrice) , 0)} Р</h4>
             </Col>
         </Row>
       </Container>

@@ -21,7 +21,7 @@ export const itemsReducer = (state = defaultStore, action) =>{
             ...state, 
             cartItems: [...state.cartItems, ...action.payload],
             sortedCart: 
-              state.cartItems.filter((el)=> el.id === action.payload.id).length > 0 
+              state.cartItems.filter((el)=> el.id === action.payload[0].id ).length > 0 
               ? [...state.sortedCart] 
               : [...state.sortedCart, action.payload[0]] 
           }
@@ -29,7 +29,7 @@ export const itemsReducer = (state = defaultStore, action) =>{
           ...state, 
           cartItems: [...state.cartItems, action.payload],
           sortedCart: 
-            state.cartItems.filter((el)=> el.id === action.payload.id &&  el.currentPrice === action.payload.currentPrice).length > 0 
+            state.cartItems.filter((el)=> el.id === action.payload.id).length > 0 
             ? [...state.sortedCart] 
             : [...state.sortedCart, action.payload] 
         }
