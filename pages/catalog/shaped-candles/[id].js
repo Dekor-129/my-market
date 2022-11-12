@@ -128,7 +128,7 @@ export default function Posts({ product, colors }) {
                   coloring &&
                   <Row>
                     <Col>Дополнительное окрашивание</Col>
-                    <Col>+ 50 Р</Col>
+                    <Col>+ {product.parameter.coloring.coloringPrice} Р</Col>
                   </Row>
                 }
                 <Row>

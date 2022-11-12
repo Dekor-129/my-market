@@ -15,7 +15,7 @@ export default function TrashCart({elem, cartItems}) {
         <Row >
           <Col className="text-center  align-self-center">
             {
-              cartItems.filter((el)=> el.id === elem.id).reduce((sum, current)=> sum + (current.parameter.coloring ? current.currentPrice + current.coloringPrice : current.currentPrice) , 0)
+              cartItems.filter((el)=> el.id === elem.id).reduce((sum, current)=> sum + (current.parameter.coloring.coloring ? current.currentPrice + current.parameter.coloring.coloringPrice : current.currentPrice) , 0)
             } P
             <span onClick={deleteProduct} className={"ms-1 " + classes.trashCart}>
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-trash" viewBox="0 0 16 16">

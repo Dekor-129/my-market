@@ -12,39 +12,37 @@ export default function CartList({showSuccess}) {
   const cartItems = useSelector((state)=> state.items.cartItems)
   const sortedCart = useSelector((state)=> state.items.sortedCart)
   const [modalShow, setModalShow] = useState(false)
+  console.log(cartItems[0].parameter.color);
+  //console.log(cartItems[1].parameter.color);
   //console.log(cartItems);
   //console.log(sortedCart);
 
   return (
     <>
       <Container className={classes.cartContainer + ' my-5'}>
-          <Row className={' m-5' }>
-            <Col sm={3} className="text-center  align-self-center">Продукт</Col>
-            <Col sm={3} className="text-center  align-self-center">Цена за единицу</Col>
-            <Col sm={3} className="text-center  align-self-center">Колличество</Col>
-            <Col sm={3} className="text-center  align-self-center">Цена</Col>
-          </Row>
         {
           sortedCart.map((elem)=>(
-            <Row className={' m-5' } key={elem.id}>
+            <Row className={' m-4' } key={elem.id}>
               <ProductCart elem={elem} />
-              <PriceCart cartItems={cartItems} elem={elem} /> 
-              <QTYCart cartItems={cartItems} elem={elem} /> 
+              <Col className="text-center  align-self-center">
+                <Row>
+                  <PriceCart cartItems={cartItems} elem={elem} /> 
+                  <QTYCart cartItems={cartItems} elem={elem} /> 
+                </Row>
+              </Col>
               <TrashCart cartItems={cartItems} elem={elem} />
             </Row>
           ))
         }
       </Container>
       <Container>
-        <Row className='justify-content-end'>
-            <Col sm={3}>
+        <Row className='justify-content-end mx-5'>
+            <Col sm={5} md={4} lg={3} xl={3}>
               <h4  className={'text-center mb-3' }>Итого: {cartItems.reduce((sum, current)=>  sum + (current.parameter.coloring.coloring ? current.currentPrice + current.parameter.coloring.coloringPrice : current.currentPrice) , 0)} Р</h4>
             </Col>
         </Row>
-      </Container>
-      <Container>
-        <Row className='justify-content-end'>
-            <Col className='me-4' sm={2}>
+        <Row className='justify-content-end mx-5'>
+            <Col className='text-center' sm={5} md={4} lg={3} xl={3}>
               <button onClick={() => setModalShow(true)} className={classes.Cartbutton + ' mb-5'}>Оформить заказ</button>
             </Col>
         </Row>

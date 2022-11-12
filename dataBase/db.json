@@ -180,8 +180,8 @@
     "src": "/candles/serdcegeometria.jpeg",
     "description": "Сердце геометрия",
     "type": "shaped-candles",
-    "price": 250,
-    "currentPrice": 200,
+    "price": 200,
+    "currentPrice": 150,
     "coloringPrice": 50,
     "parameter": {
       "weight": 39,
@@ -200,6 +200,56 @@
   },
   {
     "id": 10,
+    "path": "serdce-geometry",
+    "name": "Сердце геометрия L",
+    "src": "/candles/serdcegeometria.jpeg",
+    "description": "Сердце геометрия",
+    "type": "shaped-candles",
+    "price": 180,
+    "currentPrice": 120,
+    "coloringPrice": 50,
+    "parameter": {
+      "weight": 24,
+      "height": 1.7,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
+    }
+  },
+  {
+    "id": 11,
+    "path": "serdce-geometry",
+    "name": "Сердце геометрия S",
+    "src": "/candles/serdcegeometria.jpeg",
+    "description": "Сердце геометрия",
+    "type": "shaped-candles",
+    "price": 100,
+    "currentPrice": 70,
+    "coloringPrice": 50,
+    "parameter": {
+      "weight": 10,
+      "height": 1.4,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
+    }
+  },
+  {
+    "id": 12,
     "path": "geometry",
     "name": "Геометрия",
     "src": "/candles/geometry.jpeg",
@@ -224,7 +274,7 @@
     }
   },
   {
-    "id": 11,
+    "id": 13,
     "path": "sova",
     "name": "Сова",
     "src": "/candles/sova.png",
@@ -249,7 +299,7 @@
     }
   },
   {
-    "id": 12,
+    "id": 14,
     "path": "rose",
     "name": "Роза",
     "src": "/candles/rose.jpeg",
@@ -274,7 +324,7 @@
     }
   },
   {
-    "id": 13,
+    "id": 15,
     "path": "rose-colonna",
     "name": "Колонна роз",
     "src": "/candles/rose-colonna.png",
@@ -299,7 +349,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 16,
     "path": "boginya-bast",
     "name": "Богиня Баст",
     "src": "/candles/boginya-bast.png",
@@ -324,7 +374,7 @@
     }
   },
   {
-    "id": 15,
+    "id": 17,
     "path": "bubble",
     "name": "Bubble",
     "src": "/candles/bubble.jpeg",
@@ -349,7 +399,7 @@
     }
   },
   {
-    "id": 16,
+    "id": 18,
     "path": "minibubble",
     "name": "Mini Bubble",
     "src": "/candles/mini-bubble.jpeg",
@@ -374,68 +424,18 @@
     }
   },
   {
-    "id": 17,
+    "id": 19,
     "path": "mini-rabbit",
     "name": "Малыш кролик",
     "src": "/candles/mini-rabbit.jpeg",
     "description": "mini-rabbit",
     "type": "shaped-candles",
-    "price": 200,
-    "currentPrice": 150,
+    "price": 250,
+    "currentPrice": 200,
     "coloringPrice": 50,
     "parameter": {
       "weight": 30,
       "height": 4,
-      "color": {
-        "color": "natural",
-        "colorName": "Натуральный",
-        "price": 0
-      },
-      "coloring": {
-        "coloring": false,
-        "coloringPrice": 50
-      },
-      "scented": false
-    }
-  },
-  {
-    "id": 18,
-    "path": "serdce-geometry",
-    "name": "Сердце геометрия L",
-    "src": "/candles/serdcegeometria.jpeg",
-    "description": "Сердце геометрия",
-    "type": "shaped-candles",
-    "price": 250,
-    "currentPrice": 200,
-    "coloringPrice": 50,
-    "parameter": {
-      "weight": 24,
-      "height": 1.7,
-      "color": {
-        "color": "natural",
-        "colorName": "Натуральный",
-        "price": 0
-      },
-      "coloring": {
-        "coloring": false,
-        "coloringPrice": 50
-      },
-      "scented": false
-    }
-  },
-  {
-    "id": 19,
-    "path": "serdce-geometry",
-    "name": "Сердце геометрия S",
-    "src": "/candles/serdcegeometria.jpeg",
-    "description": "Сердце геометрия",
-    "type": "shaped-candles",
-    "price": 250,
-    "currentPrice": 200,
-    "coloringPrice": 50,
-    "parameter": {
-      "weight": 10,
-      "height": 1.4,
       "color": {
         "color": "natural",
         "colorName": "Натуральный",
