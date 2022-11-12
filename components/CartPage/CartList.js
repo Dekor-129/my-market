@@ -14,7 +14,7 @@ export default function CartList({showSuccess}) {
   const [modalShow, setModalShow] = useState(false)
   console.log(cartItems[0].parameter.color);
   //console.log(cartItems[1].parameter.color);
-  //console.log(cartItems);
+  console.log(cartItems);
   //console.log(sortedCart);
 
   return (

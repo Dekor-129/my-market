@@ -8,26 +8,63 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
-import CardButton from '../../../components/ProductCard/CardButton';
+import PageButton from './PageButton';
 
 export default function Posts({ product, colors }) {
   const [color, setColor] = useState(colors[0])
-  const [coloring, setColoring] = useState(product.parameter.coloring.coloring)
-  const [quantity, setQuantity] = useState([product])
+  const [prod, setProd] = useState({ ...product })
+  const [coloring, setColoring] = useState(prod.parameter.coloring.coloring)
+  const [quantity, setQuantity] = useState([ prod ])
 
+  console.log(prod);
+
+  const normilize = ()=> {
+    setProd(()=> {
+      const obj = {
+        ...product
+      }
+      setColoring(obj.parameter.coloring.coloring)
+      //setColor(colors[0])
+      return obj
+    })
+  }
   const handleColor = (e)=>{
     setColor(...colors.filter((el)=> el.name === e.target.value))
-    product.parameter.color = colors.filter((el)=> el.name === e.target.value)[0]
-    setQuantity([product])
+    const color = colors.filter((el)=> el.name === e.target.value)[0]
+    setProd((oldProp)=> {
+      const obj = {
+        ...oldProp,
+        parameter: {
+          ...oldProp.parameter,
+          color: color
+        }
+      }
+      setQuantity([ obj ])
+      return obj
+  })
   }
 
   const handleColoring = ()=>{
     setColoring(!coloring)
-    product.parameter.coloring.coloring = !product.parameter.coloring.coloring
+    const prodColoring = !prod.parameter.coloring.coloring
+    setProd((oldProp)=> {
+      const obj = {
+        ...oldProp,
+        parameter: {
+          ...oldProp.parameter,
+          coloring: {
+            ...oldProp.parameter.coloring,
+            coloring: prodColoring
+          }
+        }
+      }
+      setQuantity([ obj ])
+      return obj
+    })
   }
 
   const increment = ()=>{
-    setQuantity([...quantity, product])
+    setQuantity([...quantity, prod])
   }
 
   const decrement = ()=>{
@@ -39,7 +76,7 @@ export default function Posts({ product, colors }) {
   }
 
   return (
-    <MainContainer title = { product.name }>
+    <MainContainer title = { prod.name }>
       <Container>
         <div className='blockPath'>
           <Link href={'/'}>
@@ -51,8 +88,8 @@ export default function Posts({ product, colors }) {
           <Link href={'/catalog/shaped-candles'}>
             <a>Форменые свечи / </a>
           </Link>
-          <Link href={`/catalog/shaped-candles/${product.path}`}>
-            <a><span>{product.name}</span></a>
+          <Link href={`/catalog/shaped-candles/${prod.path}`}>
+            <a><span>{prod.name}</span></a>
           </Link>
         </div>
       </Container>
@@ -60,7 +97,7 @@ export default function Posts({ product, colors }) {
       <Container className='my-4'>
         <Row>
           <Col lg={6}>
-            <ProductPageImg src={ product.src }/>
+            <ProductPageImg src={ prod.src }/>
           </Col>
           <Col lg={6}>
             <Col>
@@ -73,11 +110,11 @@ export default function Posts({ product, colors }) {
                   <Container>
                     <Row>
                       <Col>Вес свечи: </Col>
-                      <Col>{product.parameter.weight} грамм</Col>
+                      <Col>{prod.parameter.weight} грамм</Col>
                     </Row>
                     <Row>
                       <Col>Высота свечи: </Col>
-                      <Col>{product.parameter.height} см</Col>
+                      <Col>{prod.parameter.height} см</Col>
                     </Row>
                     <Row>
                       <Col>Цвет: </Col>
@@ -117,18 +154,18 @@ export default function Posts({ product, colors }) {
               <Container style={{marginTop: '200px'}}>
                 <hr />
                 <Row>
-                  <Col>Свеча {product.name}</Col>
-                  <Col>+ {product.currentPrice} Р</Col>
+                  <Col>Свеча {prod.name}</Col>
+                  <Col>+ {prod.currentPrice} Р</Col>
                 </Row>
                 <Row>
-                  <Col>Цвет {product.parameter.colorName}</Col>
+                  <Col>Цвет {prod.parameter.colorName}</Col>
                   <Col>+ 0 Р</Col>
                 </Row>
                 {
                   coloring &&
                   <Row>
                     <Col>Дополнительное окрашивание</Col>
-                    <Col>+ {product.parameter.coloring.coloringPrice} Р</Col>
+                    <Col>+ {prod.parameter.coloring.coloringPrice} Р</Col>
                   </Row>
                 }
                 <Row>
@@ -163,7 +200,7 @@ export default function Posts({ product, colors }) {
                 </Row>
                 <Row className='justify-content-end mt-3'>
                   <Col sm='6'>
-                    <CardButton elem={quantity} />
+                    <PageButton elem={quantity} normilize={normilize} />
                   </Col>
                 </Row>
               </Container>
