@@ -1,5 +1,6 @@
 import ProductPageImg from '../../../components/ProductPageImg';
 import db from '../../../dataBase/db.json'
+import colorsDB from '../../../dataBase/colorsDB.json'
 import MainContainer from '../../../Layouts/MainContainer'
 import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -11,19 +12,18 @@ import CardButton from '../../../components/ProductCard/CardButton';
 
 export default function Posts({ product, colors }) {
   const [color, setColor] = useState(colors[0])
-  const [coloring, setColoring] = useState(product.parameter.coloring)
+  const [coloring, setColoring] = useState(product.parameter.coloring.coloring)
   const [quantity, setQuantity] = useState([product])
 
   const handleColor = (e)=>{
     setColor(...colors.filter((el)=> el.name === e.target.value))
-    product.parameter.colorName = colors.filter((el)=> el.name === e.target.value)[0].name
-    product.parameter.color = colors.filter((el)=> el.name === e.target.value)[0].color
+    product.parameter.color = colors.filter((el)=> el.name === e.target.value)[0]
     setQuantity([product])
   }
 
   const handleColoring = ()=>{
     setColoring(!coloring)
-    product.parameter.coloring = !product.parameter.coloring
+    product.parameter.coloring.coloring = !product.parameter.coloring.coloring
   }
 
   const increment = ()=>{
@@ -65,13 +65,10 @@ export default function Posts({ product, colors }) {
           <Col lg={6}>
             <Col>
               <Tabs
-                defaultActiveKey="description"
+                defaultActiveKey="parameter"
                 id="uncontrolled-tab-example"
                 className="mb-3"
               >
-                <Tab eventKey="description" title="Описание">
-                  <p>{product.description}</p>
-                </Tab>
                 <Tab eventKey="parameter" title="Характеристики">
                   <Container>
                     <Row>
@@ -86,7 +83,7 @@ export default function Posts({ product, colors }) {
                       <Col>Цвет: </Col>
                       <Col>
                         <Row>
-                          <Col>
+                          <Col xs ={ 3 }>
                             <div className={'colorIcon ' + color.color}></div>
                           </Col>
                           <Col>
@@ -206,25 +203,12 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const product = await db.filter((elem)=> elem.path === params.id)[0]
+  const colors = await colorsDB
 
-  
-  const colors = [
-    {
-      id: 1,
-      name: 'Натуральный',
-      color: 'natural',
-    },
-    {
-      id: 2,
-      name: 'Черный',
-      color: 'black',
-    },
-    {
-      id: 3,
-      name: 'Желтый',
-      color: 'yellow',
-    },
-  ]
-
-  return { props: { product, colors } }
+  return { 
+    props: { 
+      product, 
+      colors 
+    } 
+  }
 }

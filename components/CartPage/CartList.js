@@ -38,7 +38,7 @@ export default function CartList({showSuccess}) {
       <Container>
         <Row className='justify-content-end'>
             <Col sm={3}>
-              <h4  className={'text-center mb-3' }>Итого: {cartItems.reduce((sum, current)=>  sum + (current.parameter.coloring ? current.currentPrice + current.coloringPrice : current.currentPrice) , 0)} Р</h4>
+              <h4  className={'text-center mb-3' }>Итого: {cartItems.reduce((sum, current)=>  sum + (current.parameter.coloring.coloring ? current.currentPrice + current.parameter.coloring.coloringPrice : current.currentPrice) , 0)} Р</h4>
             </Col>
         </Row>
       </Container>

@@ -8,14 +8,19 @@
     "type": "shaped-candles",
     "price": 250,
     "currentPrice": 200,
-    "coloringPrice": 50,
     "parameter": {
-      "weight": 37,
-      "height": 0,
-      "color": "natural",
-      "colorName": "Натуральный",
-      "scented": false,
-      "coloring": false
+      "weight": 40,
+      "height": 5.8,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
     }
   },
   {
@@ -29,12 +34,18 @@
     "currentPrice": 300,
     "coloringPrice": 50,
     "parameter": {
-      "weight": 0,
-      "height": 0,
-      "color": "natural",
-      "colorName": "Натуральный",
-      "scented": false,
-      "coloring": false
+      "weight": 128,
+      "height": 9.5,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
     }
   },
   {
@@ -48,12 +59,18 @@
     "currentPrice": 300,
     "coloringPrice": 50,
     "parameter": {
-      "weight": 0,
-      "height": 0,
-      "color": "natural",
-      "colorName": "Натуральный",
-      "scented": false,
-      "coloring": false
+      "weight": 100,
+      "height": 11.5,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
     }
   },
   {
@@ -67,12 +84,18 @@
     "currentPrice": 200,
     "coloringPrice": 50,
     "parameter": {
-      "weight": 0,
-      "height": 0,
-      "color": "natural",
-      "colorName": "Натуральный",
-      "scented": false,
-      "coloring": false
+      "weight": 60,
+      "height": 6.5,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
     }
   },
   {
@@ -86,12 +109,18 @@
     "currentPrice": 250,
     "coloringPrice": 50,
     "parameter": {
-      "weight": 100,
-      "height": 0,
-      "color": "natural",
-      "colorName": "Натуральный",
-      "scented": false,
-      "coloring": false
+      "weight": 80,
+      "height": 4.2,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
     }
   },
   {
@@ -106,11 +135,17 @@
     "coloringPrice": 50,
     "parameter": {
       "weight": 100,
-      "height": 0,
-      "color": "natural",
-      "colorName": "Натуральный",
-      "scented": false,
-      "coloring": false
+      "height": 11.5,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
     }
   },
   {
@@ -125,17 +160,23 @@
     "coloringPrice": 50,
     "parameter": {
       "weight": 75,
-      "height": 0,
-      "color": "natural",
-      "colorName": "Натуральный",
-      "scented": false,
-      "coloring": false
+      "height": 4.5,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
     }
   },
   {
     "id": 9,
     "path": "serdce-geometry",
-    "name": "Сердце геометрия",
+    "name": "Сердце геометрия XL",
     "src": "/candles/serdcegeometria.jpeg",
     "description": "Сердце геометрия",
     "type": "shaped-candles",
@@ -143,12 +184,18 @@
     "currentPrice": 200,
     "coloringPrice": 50,
     "parameter": {
-      "weight": 38,
-      "height": 0,
-      "color": "natural",
-      "colorName": "Натуральный",
-      "scented": false,
-      "coloring": false
+      "weight": 39,
+      "height": 2,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
     }
   },
   {
@@ -163,11 +210,17 @@
     "coloringPrice": 50,
     "parameter": {
       "weight": 70,
-      "height": 0,
-      "color": "natural",
-      "colorName": "Натуральный",
-      "scented": false,
-      "coloring": false
+      "height": 4,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
     }
   },
   {
@@ -182,11 +235,17 @@
     "coloringPrice": 50,
     "parameter": {
       "weight": 80,
-      "height": 0,
-      "color": "natural",
-      "colorName": "Натуральный",
-      "scented": false,
-      "coloring": false
+      "height": 6.2,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
     }
   },
   {
@@ -201,11 +260,17 @@
     "coloringPrice": 50,
     "parameter": {
       "weight": 80,
-      "height": 0,
-      "color": "natural",
-      "colorName": "Натуральный",
-      "scented": false,
-      "coloring": false
+      "height": 3.5,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
     }
   },
   {
@@ -220,11 +285,17 @@
     "coloringPrice": 50,
     "parameter": {
       "weight": 80,
-      "height": 0,
-      "color": "natural",
-      "colorName": "Натуральный",
-      "scented": false,
-      "coloring": false
+      "height": 7.5,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
     }
   },
   {
@@ -240,10 +311,16 @@
     "parameter": {
       "weight": 56,
       "height": 15.6,
-      "color": "natural",
-      "colorName": "Натуральный",
-      "scented": false,
-      "coloring": false
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
     }
   },
   {
@@ -258,11 +335,17 @@
     "coloringPrice": 50,
     "parameter": {
       "weight": 130,
-      "height": 0,
-      "color": "natural",
-      "colorName": "Натуральный",
-      "scented": false,
-      "coloring": false
+      "height": 6,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
     }
   },
   {
@@ -277,11 +360,92 @@
     "coloringPrice": 50,
     "parameter": {
       "weight": 40,
-      "height": 0,
-      "color": "natural",
-      "colorName": "Натуральный",
-      "scented": false,
-      "coloring": false
+      "height": 3.5,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
+    }
+  },
+  {
+    "id": 17,
+    "path": "rabbit",
+    "name": "Кролик",
+    "src": "/candles/mouse.jpeg",
+    "description": "rabbit",
+    "type": "shaped-candles",
+    "price": 200,
+    "currentPrice": 150,
+    "coloringPrice": 50,
+    "parameter": {
+      "weight": 30,
+      "height": 4,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
+    }
+  },
+  {
+    "id": 18,
+    "path": "serdce-geometry",
+    "name": "Сердце геометрия L",
+    "src": "/candles/serdcegeometria.jpeg",
+    "description": "Сердце геометрия",
+    "type": "shaped-candles",
+    "price": 250,
+    "currentPrice": 200,
+    "coloringPrice": 50,
+    "parameter": {
+      "weight": 24,
+      "height": 1.7,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
+    }
+  },
+  {
+    "id": 19,
+    "path": "serdce-geometry",
+    "name": "Сердце геометрия S",
+    "src": "/candles/serdcegeometria.jpeg",
+    "description": "Сердце геометрия",
+    "type": "shaped-candles",
+    "price": 250,
+    "currentPrice": 200,
+    "coloringPrice": 50,
+    "parameter": {
+      "weight": 10,
+      "height": 1.4,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
     }
   }
 ]
