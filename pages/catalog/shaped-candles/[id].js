@@ -16,7 +16,7 @@ export default function Posts({ product, colors }) {
   const [coloring, setColoring] = useState(prod.parameter.coloring.coloring)
   const [quantity, setQuantity] = useState([ prod ])
 
-  console.log(prod);
+  //console.log(prod);
 
   const normilize = ()=> {
     setProd(()=> {

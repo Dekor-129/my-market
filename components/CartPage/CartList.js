@@ -12,9 +12,9 @@ export default function CartList({showSuccess}) {
   const cartItems = useSelector((state)=> state.items.cartItems)
   const sortedCart = useSelector((state)=> state.items.sortedCart)
   const [modalShow, setModalShow] = useState(false)
-  console.log(cartItems[0].parameter.color);
+  //console.log(cartItems[0].parameter.color);
   //console.log(cartItems[1].parameter.color);
-  console.log(cartItems);
+  //console.log(cartItems);
   //console.log(sortedCart);
 
   return (
