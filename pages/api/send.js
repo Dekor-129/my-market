@@ -8,30 +8,54 @@ export default async function handler(req, res) {
 
   const formText = 
   `
-    Имя: ${form.name} \n         
-    Email: ${form.email}   \n           
-    Телефон: ${form.tel}   \n               
-    Комментарий: ${form.comment || 'Нет'}\n  
+    Имя: ${form.name};         
+    Email: ${form.email};         
+    Телефон: ${form.tel};             
+    Комментарий: ${form.comment || 'Нет'};
   `
-
   const cartItemsText = cartItems.map((el, index)=>(
     `
-    ${index + 1} Заказ
-    Название: ${el.name}\n  
-    Цвет: ${el.parameter.colorName}\n  
-    Окрашивание: ${el.parameter.coloring ? 'Да' : 'Нет'}\n  
-    Ароматизатор: ${el.parameter.scented ? 'Да' : 'Нет'}\n  
-    Цена за штуку: ${el.currentPrice}\n  
+    ${index + 1} Заказ;
+    Название: ${el.name}; 
+    Цвет: ${el.parameter.colorName}; 
+    Окрашивание: ${el.parameter.coloring ? 'Да' : 'Нет'};  
+    Ароматизатор: ${el.parameter.scented ? 'Да' : 'Нет'}; 
+    Цена за штуку: ${el.currentPrice}; 
      ` 
-  ))
-  const ordersList  = cartItemsText.join('                                                                                                                                                    ')
+  ))/*
+  const arr =[]
+
+  cartItems.forEach(element => {
+    if(arr.filter((elem)=> (
+      elem.name !== element.name
+      /*&& elem.parameter.colorName === element.parameter.colorName
+      && elem.parameter.coloring === element.parameter.coloring
+      && elem.parameter.scented === element.parameter.scented*/
+    /*)).length === 0) arr.push(element)*/
+    
+  /*})*/
+  /*const sortArr = cartItems.reduce((sum, el)=> 
+    sum.filter((elem)=> (
+      elem.name === el.name
+      && elem.parameter.colorName === el.parameter.colorName
+      && elem.parameter.coloring === el.parameter.coloring
+      && elem.parameter.scented === el.parameter.scented
+    )) 
+    ? sum.push(el)
+    : sum
+    , arr)*/
 
 
+    console.log(arr);
+
+  //const ordersList  = cartItemsText.join('                                                                                                                                                    ')
+
+/*
   await fetch(
     adress 
     + formText 
     + '                                                                                                                                                            ' 
     + ordersList
-  )
-  res.status(200).json({ message: form })
+  )*/
+  res.status(200).json({  })
 }
