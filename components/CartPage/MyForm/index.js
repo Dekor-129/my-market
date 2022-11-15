@@ -50,7 +50,7 @@ export default function MyForm({ onClose, showSuccess, load }) {
   }
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form className='position-relative' onSubmit={handleSubmit}>
       <FloatingLabel 
         controlId="floatingInputName" 
         label="Имя" 
