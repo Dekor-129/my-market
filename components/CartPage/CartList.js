@@ -12,10 +12,6 @@ export default function CartList({showSuccess}) {
   const cartItems = useSelector((state)=> state.items.cartItems)
   const sortedCart = useSelector((state)=> state.items.sortedCart)
   const [modalShow, setModalShow] = useState(false)
-  //console.log(cartItems[0].parameter.color);
-  //console.log(cartItems[1].parameter.color);
-  //console.log(cartItems);
-  //console.log(sortedCart);
 
   return (
     <>
@@ -38,7 +34,7 @@ export default function CartList({showSuccess}) {
       <Container>
         <Row className='justify-content-end mx-5'>
             <Col sm={5} md={4} lg={3} xl={3}>
-              <h4  className={'text-center mb-3' }>Итого: {cartItems.reduce((sum, current)=>  sum + (current.parameter.coloring.coloring ? current.currentPrice + current.parameter.coloring.coloringPrice : current.currentPrice) , 0)} Р</h4>
+              <h4  className={'text-center mb-3' }>Итого: {cartItems.reduce((sum, current)=>  sum + (current.parameter.coloring.coloring ? current.currentPrice + current.parameter.coloring.coloringPrice : current.currentPrice) , 0)} &#8381;</h4>
             </Col>
         </Row>
         <Row className='justify-content-end mx-5'>

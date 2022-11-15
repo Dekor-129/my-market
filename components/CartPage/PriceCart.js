@@ -12,7 +12,7 @@ export default function PriceCart({elem, cartItems }) {
         : arr1.length > 0
         ? elem.currentPrice
         : elem.currentPrice + elem.parameter.coloring.coloringPrice
-      } Р
+      } &#8381;
     </Col>
   )
 }
