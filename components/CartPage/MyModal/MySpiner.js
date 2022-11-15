@@ -7,7 +7,7 @@ export default function MySpiner() {
       position: 'absolute',
       display: 'flex',
       justifyContent: 'center',
-      top: 0,
+      top: '-300px',
       height: '90vh',
       width: '100%'
     }}>

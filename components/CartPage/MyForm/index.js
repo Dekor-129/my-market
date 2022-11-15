@@ -30,7 +30,7 @@ export default function MyForm({ onClose, showSuccess, load }) {
       return
     }
 
-    const response = await fetch(adress, {
+    const response = await fetch('https://my-market-psi.vercel.app/api/send', {
       method: 'POST',
       body: JSON.stringify({
         form,
@@ -39,8 +39,6 @@ export default function MyForm({ onClose, showSuccess, load }) {
       })
 
     });
-
-    setIsLoad(!isLoad)
 
     if(response.ok) {
       onClose(false)
@@ -117,7 +115,7 @@ export default function MyForm({ onClose, showSuccess, load }) {
       <Container className='mt-3'>
         <Row className='justify-content-end'>
           <Col sm={2}>
-            <Button type='submit'>Отправить</Button>
+            <Button onClick={()=> setIsLoad(!isLoad)} type='submit'>Отправить</Button>
           </Col>
         </Row>
       </Container>
