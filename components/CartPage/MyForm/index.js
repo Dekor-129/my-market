@@ -5,11 +5,16 @@ import Form from 'react-bootstrap/Form';
 import { useDispatch } from 'react-redux'
 import { fullDeleteAction } from '../../../store/itemsReducer'
 import { useSelector } from 'react-redux'
+import MySpiner from '../MyModal/MySpiner';
 
-export default function MyForm({ onClose, showSuccess }) {
+const adress = 'https://my-market-psi.vercel.app/api/send'
+
+export default function MyForm({ onClose, showSuccess, load }) {
   const dispatch = useDispatch()
   const cartItems = useSelector((state)=> state.items.cartItems)
   const sortedCart = useSelector((state)=> state.items.sortedCart)
+  const [isLoad, setIsLoad] = useState(false)
+
 
   const [form, setForm] = useState({
     name: '',
@@ -25,7 +30,7 @@ export default function MyForm({ onClose, showSuccess }) {
       return
     }
 
-    const response = await fetch(`http://localhost:3000/api/send`, {
+    const response = await fetch(adress, {
       method: 'POST',
       body: JSON.stringify({
         form,
@@ -34,12 +39,15 @@ export default function MyForm({ onClose, showSuccess }) {
       })
 
     });
+
+    setIsLoad(!isLoad)
+
     if(response.ok) {
       onClose(false)
       dispatch(fullDeleteAction())
       showSuccess.handleClose(true)
       const res = await response.json()
-      console.log(res);
+      if(res.work) setIsLoad(!isLoad)
     }
   }
 
@@ -113,6 +121,7 @@ export default function MyForm({ onClose, showSuccess }) {
           </Col>
         </Row>
       </Container>
+      {isLoad && <MySpiner />}
     </Form>
   );
 }

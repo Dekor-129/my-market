@@ -4,7 +4,6 @@ const adress = `https://api.telegram.org/bot5376669546:AAE0deUBmzw2rs0g2-bjNzsH0
 export default async function handler(req, res) {
   const form = JSON.parse(req.body).form
   const cartItems = JSON.parse(req.body).cartItems
-  const sortedCart = JSON.parse(req.body).sortedCart
 
   const formText = 
   `
@@ -13,49 +12,46 @@ export default async function handler(req, res) {
     Телефон: ${form.tel};             
     Комментарий: ${form.comment || 'Нет'};
   `
-  const cartItemsText = cartItems.map((el, index)=>(
+
+  let sortedCart = []
+
+  cartItems.forEach(element => {
+    const elemInSortedCart = sortedCart.filter((el)=> (
+      el.id === element.id
+      && el.parameter.color.colorName === element.parameter.color.colorName
+      && el.parameter.coloring.coloring === element.parameter.coloring.coloring
+      && el.parameter.scented === element.parameter.scented
+    ))
+    const elemInCartItems = cartItems.filter((el)=> (
+      el.id === element.id
+      && el.parameter.color.colorName === element.parameter.color.colorName
+      && el.parameter.coloring.coloring === element.parameter.coloring.coloring
+      && el.parameter.scented === element.parameter.scented
+    ))
+    sortedCart = elemInSortedCart.length > 0
+    ? [...sortedCart]
+    : [...sortedCart, {...element, quantity: elemInCartItems.length}]
+    
+  })
+
+  const cartItemsText = sortedCart.map((el, index)=>(
     `
     ${index + 1} Заказ;
     Название: ${el.name}; 
-    Цвет: ${el.parameter.colorName}; 
-    Окрашивание: ${el.parameter.coloring ? 'Да' : 'Нет'};  
+    Цвет: ${el.parameter.color.colorName}; 
+    Окрашивание: ${el.parameter.coloring.coloring ? 'Да' : 'Нет'};  
     Ароматизатор: ${el.parameter.scented ? 'Да' : 'Нет'}; 
     Цена за штуку: ${el.currentPrice}; 
+    Количество: ${el.quantity}; 
      ` 
-  ))/*
-  const arr =[]
-
-  cartItems.forEach(element => {
-    if(arr.filter((elem)=> (
-      elem.name !== element.name
-      /*&& elem.parameter.colorName === element.parameter.colorName
-      && elem.parameter.coloring === element.parameter.coloring
-      && elem.parameter.scented === element.parameter.scented*/
-    /*)).length === 0) arr.push(element)*/
-    
-  /*})*/
-  /*const sortArr = cartItems.reduce((sum, el)=> 
-    sum.filter((elem)=> (
-      elem.name === el.name
-      && elem.parameter.colorName === el.parameter.colorName
-      && elem.parameter.coloring === el.parameter.coloring
-      && elem.parameter.scented === el.parameter.scented
-    )) 
-    ? sum.push(el)
-    : sum
-    , arr)*/
+  )).join('---------------------------------')
 
 
-    console.log(arr);
 
-  //const ordersList  = cartItemsText.join('                                                                                                                                                    ')
-
-/*
   await fetch(
     adress 
     + formText 
-    + '                                                                                                                                                            ' 
-    + ordersList
-  )*/
-  res.status(200).json({  })
+    + cartItemsText
+  )
+  res.status(200).json({ work: true })
 }
