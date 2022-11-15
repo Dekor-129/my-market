@@ -16,15 +16,12 @@ export default function Posts({ product, colors }) {
   const [coloring, setColoring] = useState(prod.parameter.coloring.coloring)
   const [quantity, setQuantity] = useState([ prod ])
 
-  //console.log(prod);
-
   const normilize = ()=> {
     setProd(()=> {
       const obj = {
         ...product
       }
       setColoring(obj.parameter.coloring.coloring)
-      //setColor(colors[0])
       return obj
     })
   }
@@ -155,17 +152,17 @@ export default function Posts({ product, colors }) {
                 <hr />
                 <Row>
                   <Col>Свеча {prod.name}</Col>
-                  <Col>+ {prod.currentPrice} Р</Col>
+                  <Col>+ {prod.currentPrice} &#8381;</Col>
                 </Row>
                 <Row>
                   <Col>Цвет {prod.parameter.colorName}</Col>
-                  <Col>+ 0 Р</Col>
+                  <Col>+ 0 &#8381;</Col>
                 </Row>
                 {
                   coloring &&
                   <Row>
                     <Col>Дополнительное окрашивание</Col>
-                    <Col>+ {prod.parameter.coloring.coloringPrice} Р</Col>
+                    <Col>+ {prod.parameter.coloring.coloringPrice} &#8381;</Col>
                   </Row>
                 }
                 <Row>
@@ -195,7 +192,7 @@ export default function Posts({ product, colors }) {
                       coloring
                       ? quantity.reduce((current, el)=> current + el.currentPrice + 50, 0)
                       : quantity.reduce((current, el)=> current + el.currentPrice, 0)
-                    } Р
+                    } &#8381;
                   </Col>
                 </Row>
                 <Row className='justify-content-end mt-3'>
@@ -212,22 +209,6 @@ export default function Posts({ product, colors }) {
     </MainContainer>
   )
 }
-/*
-export async function getServerSideProps(context) {
-  const router = context.query.id
-  const product = await db.filter((elem)=> elem.path === router)[0]
-  const color = {
-    natural: 'natural',
-    black: 'black',
-    black: 'yellow'
-  }
-  return {
-    props: { 
-      product,
-      color
-    }, // will be passed to the page component as props
-  }
-}*/
 
 export async function getStaticPaths() {
   const product = await db
