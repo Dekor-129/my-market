@@ -30,7 +30,7 @@ export default function MyForm({ onClose, showSuccess, load }) {
       return
     }
 
-    const response = await fetch('https://my-market-psi.vercel.app/api/send', {
+    const response = await fetch('https://www.your-candle.ru/api/send', {
       method: 'POST',
       body: JSON.stringify({
         form,
