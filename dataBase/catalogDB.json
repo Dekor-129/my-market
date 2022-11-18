@@ -3,12 +3,12 @@
     "id": 1,
     "path": "shaped-candles",
     "name": "Формовые свечи",
-    "src": "/catalogImg/form-candle.jpeg"
+    "src": "/catalogImg/bubble.jpeg"
   },
   {
     "id": 2,
     "path": "scented-candles",
     "name": "Ароматические свечи",
-    "src": "/catalogImg/aroma-candle.jpeg"
+    "src": "/catalogImg/aroma-candle.png"
   }
 ]

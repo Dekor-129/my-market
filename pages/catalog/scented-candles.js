@@ -6,7 +6,7 @@ export default function scentedCandles() {
   return (
     <>
     <MainContainer 
-      title = 'Ароматические свечи' 
+      title = 'Большой выбор ароматических свечей по доступным ценам' 
       description={'Большой выбор ароматических свечей по доступным ценам.'}
       keywords={'ароматические свечи'}
     >

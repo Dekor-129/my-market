@@ -74,7 +74,7 @@ export default function Posts({ product, colors }) {
 
   return (
     <MainContainer 
-      title = { prod.name } 
+      title = { `Свеча ${product.name} по доступной цене` } 
       description={`Свеча ${product.name} по доступной цене.`}
       keywords={`свеча ${product.name}, формовые свечи`}
     >

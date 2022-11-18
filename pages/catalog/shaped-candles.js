@@ -9,7 +9,7 @@ export default function shapedCandles() {
   return (
     <>
     <MainContainer 
-      title = 'Формовые свечи' 
+      title = 'Большой выбор формовых свечей по доступным ценам' 
       description={'Большой выбор формовых свечей по доступным ценам.'}
       keywords={'формовые свечи'}
     >

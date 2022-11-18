@@ -1,14 +1,13 @@
 import MainContainer from '../Layouts/MainContainer'
 import ProductCard from '../components/ProductCard';
 import catalogDB from '../dataBase/catalogDB.json'
-import Link from 'next/link'
 import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Catalog() {
   return (
     <>
     <MainContainer 
-      title = 'Каталог' 
+      title = 'В нашем асортименте вы найдете свечи на любой вкус: формовые свечи, ароматические свечи' 
       description={'В нашем асортименте вы найдете свечи на любой вкус: формовые свечи, ароматические свечи.'}
       keywords={'формовые свечи, ароматические свечи'}
     >

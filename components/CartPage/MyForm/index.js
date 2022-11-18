@@ -20,13 +20,14 @@ export default function MyForm({ onClose, showSuccess, load }) {
     name: '',
     email: '',
     tel: '',
-    comment: ''
+    comment: '',
+    agree: false
   })
   
 
   const handleSubmit = async (event)=> {
     event.preventDefault()
-    if(form.name === false || form.email === false || form.tel === false) {
+    if(form.name === false || form.email === false || form.tel === false || form.agree === false) {
       return
     }
 
@@ -112,10 +113,24 @@ export default function MyForm({ onClose, showSuccess, load }) {
         />
         
       </FloatingLabel>
+      <Form.Group className="my-3" controlId="formBasicCheckbox">
+        <Form.Check 
+          required 
+          type="checkbox" label="Срок изготовления и сборки заказов составляет 3-5 дней" 
+          onClick={()=>{
+            setForm({...form, agree: !form.agree})
+          }}
+        />
+      </Form.Group>
       <Container className='mt-3'>
         <Row className='justify-content-end'>
           <Col sm={2}>
-            <Button onClick={()=> setIsLoad(!isLoad)} type='submit'>Отправить</Button>
+            <Button 
+              onClick={()=> 
+                form.agree && setIsLoad(!isLoad)
+              } 
+              type='submit'
+            >Отправить</Button>
           </Col>
         </Row>
       </Container>
