@@ -8,7 +8,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 export default function shapedCandles() {
   return (
     <>
-    <MainContainer title = 'Формовые свечи'>
+    <MainContainer 
+      title = 'Формовые свечи' 
+      description={'Большой выбор формовых свечей по доступным ценам.'}
+      keywords={'формовые свечи'}
+    >
       <Container>
         <div className='blockPath'>
           <Link href={'/'}>

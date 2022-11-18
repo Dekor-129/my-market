@@ -7,26 +7,21 @@ import { Container, Row, Col } from 'react-bootstrap';
 export default function Catalog() {
   return (
     <>
-    <MainContainer title = 'Каталог'>
+    <MainContainer 
+      title = 'Каталог' 
+      description={'В нашем асортименте вы найдете свечи на любой вкус: формовые свечи, ароматические свечи.'}
+      keywords={'формовые свечи, ароматические свечи'}
+    >
       <h2 className="text-center">Каталог</h2>
 
-      <Container>
-        <div className='blockPath'>
-          <Link href={'/'}>
-            <a>Главная / </a>
-          </Link>
-          <Link href={'/catalog'}>
-            <a><span>Каталог</span></a>
-          </Link>
-        </div>
-      </Container>
+      
 
-      <Container>
+      <Container className='mt-5'>
         <Row>
           {
             catalogDB.map((elem) => {
               return(
-                <Col className='d-flex justify-content-center' lg={4} md={6} key={elem.id}>
+                <Col className='d-flex justify-content-center' key={elem.id}>
                   <ProductCard elem={elem}/>
                 </Col>
               )

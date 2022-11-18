@@ -16,8 +16,8 @@ export default function ProductCard({ elem, setButton }) {
         ? <div className={classes.buttonBlock}>
           <div className={classes.priceBlock}>
             <span>Цена: </span>
-            <span className={classes.currentPrice}>{ elem.currentPrice} &#8381;</span>
             <span className={classes.price}>{ elem.price}</span>
+            <span className={classes.currentPrice}>{ elem.currentPrice} &#8381;</span>
           </div>
             <CardButton elem={ elem }/>
           </div>

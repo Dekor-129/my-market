@@ -7,7 +7,7 @@ import { fullDeleteAction } from '../../../store/itemsReducer'
 import { useSelector } from 'react-redux'
 import MySpiner from '../MyModal/MySpiner';
 
-const adress = 'https://my-market-psi.vercel.app/api/send'
+const adress = 'https://www.your-candle.ru'
 
 export default function MyForm({ onClose, showSuccess, load }) {
   const dispatch = useDispatch()
@@ -30,7 +30,7 @@ export default function MyForm({ onClose, showSuccess, load }) {
       return
     }
 
-    const response = await fetch('https://www.your-candle.ru/api/send', {
+    const response = await fetch(`${adress}/api/send`, {
       method: 'POST',
       body: JSON.stringify({
         form,

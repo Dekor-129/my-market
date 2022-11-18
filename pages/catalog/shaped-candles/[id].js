@@ -73,7 +73,11 @@ export default function Posts({ product, colors }) {
   }
 
   return (
-    <MainContainer title = { prod.name }>
+    <MainContainer 
+      title = { prod.name } 
+      description={`Свеча ${product.name} по доступной цене.`}
+      keywords={`свеча ${product.name}, формовые свечи`}
+    >
       <Container>
         <div className='blockPath'>
           <Link href={'/'}>
