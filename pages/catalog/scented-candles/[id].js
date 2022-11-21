@@ -1,5 +1,5 @@
 import ProductPageImg from '../../../components/ProductPageImg';
-import db from '../../../dataBase/shapedCandlesDB.json'
+import db from '../../../dataBase/scentedCandlesDB.json'
 import colorsDB from '../../../dataBase/colorsDB.json'
 import MainContainer from '../../../Layouts/MainContainer'
 import Link from 'next/link';
@@ -10,7 +10,7 @@ import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
 import PageButton from './PageButton';
 
-export default function ShapedCandles({ product, colors }) {
+export default function ScentedCandles({ product, colors }) {
   const [color, setColor] = useState(colors[0])
   const [prod, setProd] = useState({ ...product })
   const [coloring, setColoring] = useState(prod.parameter.coloring.coloring)
@@ -87,7 +87,7 @@ export default function ShapedCandles({ product, colors }) {
             <a>Каталог / </a>
           </Link>
           <Link href={'/catalog/shaped-candles'}>
-            <a>Форменые свечи / </a>
+            <a>Ароматические свечи / </a>
           </Link>
           <Link href={`/catalog/shaped-candles/${prod.path}`}>
             <a><span>{prod.name}</span></a>

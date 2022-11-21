@@ -12,9 +12,6 @@ export default function Catalog() {
       keywords={'формовые свечи, ароматические свечи'}
     >
       <h2 className="text-center">Каталог</h2>
-
-      
-
       <Container className='mt-5'>
         <Row>
           {

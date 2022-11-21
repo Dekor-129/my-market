@@ -1,16 +1,16 @@
 import MainContainer from '../../Layouts/MainContainer'
 import ProductCard from '../../components/ProductCard';
-import db from '../../dataBase/shapedCandlesDB.json'
+import db from '../../dataBase/messageCandlesDB.json'
 import Link from 'next/link'
 import { Container, Row, Col } from 'react-bootstrap';
 
-export default function ShapedCandles() {
+export default function MessageCandles() {
   return (
     <>
     <MainContainer 
-      title = 'Большой выбор формовых свечей по доступным ценам' 
-      description={'Большой выбор формовых свечей по доступным ценам.'}
-      keywords={'формовые свечи'}
+      title = 'Большой выбор свечей с посланием по доступным ценам' 
+      description={'Большой выбор свечей с посланием по доступным ценам.'}
+      keywords={'свечи с посланием'}
     >
       <Container>
         <div className='blockPath'>
@@ -21,7 +21,7 @@ export default function ShapedCandles() {
             <a>Каталог / </a>
           </Link>
           <Link href={'/catalog/shaped-candles'}>
-            <a><span>Форменые свечи</span></a>
+            <a><span>Свечи с посланием</span></a>
           </Link>
         </div>
       </Container>

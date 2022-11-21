@@ -1,4 +1,4 @@
-import items from '../dataBase/db.json'
+import items from '../dataBase/shapedCandlesDB.json'
 import catalogItems from '../dataBase/catalogDB.json'
 
 const ADD = 'ADD'

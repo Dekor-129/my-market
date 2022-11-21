@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "path": "message-candle",
+    "name": "Свеча с посланием",
+    "src": "/catalogImg/message-candles.png",
+    "description": "Единорожка",
+    "type": "shaped-candles",
+    "price": 250,
+    "currentPrice": 200,
+    "parameter": {
+      "weight": 40,
+      "height": 5.8,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
+    }
+  }
+]

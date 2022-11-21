@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "path": "scented-candle",
+    "name": "Ароматическая свеча",
+    "src": "/catalogImg/scented-candles.png",
+    "description": "Единорожка",
+    "type": "shaped-candles",
+    "price": 250,
+    "currentPrice": 200,
+    "parameter": {
+      "weight": 40,
+      "height": 5.8,
+      "color": {
+        "color": "natural",
+        "colorName": "Натуральный",
+        "price": 0
+      },
+      "coloring": {
+        "coloring": false,
+        "coloringPrice": 50
+      },
+      "scented": false
+    }
+  }
+]
