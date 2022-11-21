@@ -5,8 +5,7 @@ import Image from 'next/image'
 
 export default function ProductImg({ path, src }) {
   const router = useRouter()
-  console.log(router.pathname);
-  console.log(path);
+
   return (
     <Link href={`${router.pathname}/${path}`}>
       <div className='d-flex justify-content-center'>
