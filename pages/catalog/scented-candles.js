@@ -20,7 +20,7 @@ export default function ScentedCandles() {
           <Link href={'/catalog'}>
             <a>Каталог / </a>
           </Link>
-          <Link href={'/catalog/shaped-candles'}>
+          <Link href={'/catalog/scented-candles'}>
             <a><span>Ароматические свечи</span></a>
           </Link>
         </div>

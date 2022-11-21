@@ -20,7 +20,7 @@ export default function MessageCandles() {
           <Link href={'/catalog'}>
             <a>Каталог / </a>
           </Link>
-          <Link href={'/catalog/shaped-candles'}>
+          <Link href={'/catalog/message-candles'}>
             <a><span>Свечи с посланием</span></a>
           </Link>
         </div>
